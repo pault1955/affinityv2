@@ -1,0 +1,40 @@
+yo webapp
+grunt
+grunt build
+grunt serve
+
+switch out sass for compass
+
+switch off compass debug - debugInfo: false
+
+remove htmlmin from running
+
+ npm -g install grunt-includes --save-dev
+
+added task to gruntfile.js
+
+but did not update package.json and running 'grunt includes' fails - Task not found
+added "grunt-includes": "^0.5.0", manually to package.json and ran npm install
+grunt includes now runs
+
+-----
+
+wiredep
+
+for testing:-
+npm install -g wiredep
+
+and then wiredep --src ./app/index.html
+
+---------
+
+bower_components renamed to lib - refactored - added   "directory": "lib", to .bowerrc
+manually updated Gruntfile.js and index.html
+-----------
+
+
+
+
+
+
+
