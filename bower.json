@@ -4,6 +4,7 @@
   "dependencies": {
     "bootstrap-sass-official": "~3.3.5",
     "modernizr": "~2.8.2",
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "dw-bxslider-4": "~4.2.5"
   }
 }

@@ -1,3 +1,10 @@
+this project was created by cloning from github and then
+npm bower
+npm install
+
+------------------------
+
+
 yo webapp
 grunt
 grunt build
@@ -31,6 +38,7 @@ and then wiredep --src ./app/index.html
 bower_components renamed to lib - refactored - added   "directory": "lib", to .bowerrc
 manually updated Gruntfile.js and index.html
 -----------
+
 
 
 
