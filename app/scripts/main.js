@@ -6,6 +6,7 @@ $(document).ready(function () {
     $('ul.root_menu li:first-child').addClass('first_item');
     $('ul.root_menu li:last-child').addClass('last_item');
 
+
     $('.root_menu').slicknav({
         prependTo: '#mobile_nav',
         allowParentLinks: true,
@@ -19,13 +20,13 @@ $(document).ready(function () {
         }
     });
 
-    $('.gallery_ul').show().bxSlider({
+    $('.bannerSlides .gallery_ul').show().bxSlider({
         mode: 'fade',
         auto: true,
         pause: 8000,
         speed: 500,
         pager: true,
-        controls: false,
+        controls: true,
         preloadImages: 'all'
     });
 
@@ -36,14 +37,14 @@ $(document).ready(function () {
         var data = $.parseHTML( alt );
         var title = '<div class="slideTitle">' + ($(data).text().split('*')[ 0 ] || '') + '</div>';
         var subtitle = '<div class="slideText">' + ($(data).text().split('*')[ 1 ] || '') + '</div>';
-        var caption = '<div class="caption">' + title + subtitle + '<a href="'+ articleListLink +'" class="slideButton">Read more »</a></div>';
+        var caption = '<div class="caption">' + title + '<div class="divider"></div>' + subtitle + '<a href="'+ articleListLink +'" class="slideButton">MORE DETAILS</a></div>';
         $(caption).insertAfter( this );
     });
 
 
 
 
-    /* remove sub menus from Home   */
+  /* remove sub menus from Home   */
 
     $('ul.root_menu > li.has_sub_menu:first-child > ul.sub_menu').remove();
 

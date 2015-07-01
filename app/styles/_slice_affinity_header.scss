@@ -156,214 +156,185 @@
    Slicknav
    ========================================================================== */
 
+// core
+
 .slicknav_btn {
   position: relative;
   display: block;
   vertical-align: middle;
   float: right;
-  padding: 0.638em 0.625em 0.638em 0.625em;
+  padding: 0.438em 0.625em 0.438em 0.625em;
   line-height: 1.125em;
   cursor: pointer;
+  .slicknav_icon-bar + .slicknav_icon-bar {
+    margin-top: 0.188em;
+  }
 }
-
-.slicknav_menu .slicknav_menutxt {
-  display: block;
-  line-height: 1.188em;
-  float: right;
-}
-
-.slicknav_menu .slicknav_icon {
-  float: right;
-  margin: 0.188em 0.438em 0 0.438em;
-}
-
-.slicknav_menu .slicknav_no-text {
-  margin: 0
-}
-
-.slicknav_menu .slicknav_icon-bar {
-  display: block;
-  width: 1.125em;
-  height: 0.125em;
-}
-
-.slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
-  margin-top: 0.188em
-}
-
-.slicknav_nav {
-  clear: both
-}
-
-.slicknav_nav ul,
-.slicknav_nav li {
-  display: block
-}
-
-.slicknav_nav .slicknav_arrow {
-  float: right;
-  width: 11px;
-  height: 7px;
-  padding-top: 17px;
-}
-
-.slicknav_nav .slicknav_arrow .close {
-  width: 11px;
-  height: 7px;
-  background: url(../images/dd_down.png) center no-repeat;
-  display: block;
-  margin-top: 6px;
-}
-
-.slicknav_nav .slicknav_arrow .open {
-  width: 11px;
-  height: 7px;
-  background: url(../images/dd_up.png) center no-repeat;
-  display: block;
-  margin-top: 6px;
-}
-
-.slicknav_nav .slicknav_item {
-  display: block;
-  cursor: pointer;
-}
-
-.slicknav_nav a {
-  display: block
-}
-
-.slicknav_nav .slicknav_item a {
-  display: inline
-}
-
-.slicknav_menu:before,
-.slicknav_menu:after {
-  content: " ";
-  display: table;
-}
-
-.slicknav_menu:after {
-  clear: both
-}
-
-/* IE6/7 support */
 .slicknav_menu {
-  *zoom: 1
+  *zoom: 1;
+  .slicknav_menutxt {
+    display: block;
+    line-height: 1.188em;
+    float: left;
+  }
+  .slicknav_icon {
+    float: left;
+    margin: 0.188em 0 0 0.438em;
+  }
+  .slicknav_no-text {
+    margin: 0;
+  }
+  .slicknav_icon-bar {
+    display: block;
+    width: 1.125em;
+    height: 0.125em;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  }
+  &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+.slicknav_nav {
+  clear: both;
+  ul {
+    display: block;
+  }
+  li {
+    display: block;
+  }
+  .slicknav_arrow {
+    font-size: 0.8em;
+    margin: 0 0 0 0.4em;
+    float: right;
+  }
+  .slicknav_item {
+    cursor: pointer;
+    a {
+      display: inline;
+    }
+  }
+  .slicknav_row {
+    display: block;
+  }
+  a {
+    display: block;
+  }
+  .slicknav_parent-link a {
+    display: inline;
+  }
+}
+.slicknav_brand {
+  float: left;
 }
 
-/*
-    User Default Style
-    Change the following styles to modify the appearance of the menu.
-*/
+// theme
+
 
 .slicknav_menu {
   font-size: 16px;
+  box-sizing: border-box;
+  background: $slicknav-background-color;
+  padding: 5px;
+  * {
+    box-sizing: border-box;
+  }
+  .slicknav_menutxt {
+    color: $slicknav-color;
+    font-weight: bold;
+    text-shadow: 0 1px 3px $slicknav-text-shadow;
+  }
+  .slicknav_icon-bar {
+    background-color: $slicknav-color;
+  }
 }
-
-/* Button */
 .slicknav_btn {
+  margin: 5px 5px 6px;
   text-decoration: none;
-  background-color: #000;
-  width: 100%;
-  z-index: 999;
+  text-shadow: 0 1px 1px $slicknav_button-text-shadow;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: $slicknav_button-background-color;
 }
-
-/* Button Text */
-.slicknav_menu .slicknav_menutxt {
-  color: #fff;
-}
-
-/* Button Lines */
-.slicknav_menu .slicknav_icon-bar {
-  background-color: #fff;
-}
-
-.slicknav_menu {
-}
-
 .slicknav_nav {
-  background: #000;
-  color: #606060;
+  color: $slicknav-color;
   margin: 0;
   padding: 0;
   font-size: 0.875em;
-}
-
-.slicknav_nav, .slicknav_nav ul {
   list-style: none;
   overflow: hidden;
+  ul {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  .slicknav_row {
+    padding: 8px 10px;
+    margin: 0;
+    &:hover {
+      background: $slicknav-background-color--hover;
+      color: $slicknav-color;
+    }
+  }
+  a {
+    padding: 5px 10px;
+    margin: 2px 5px;
+    text-decoration: none;
+    color: $slicknav-color;
+    &:hover {
+      background: $slicknav-background-color--hover;
+      color: $slicknav-color--hover;
+    }
+  }
+  .slicknav_txtnode {
+    margin-left: 15px;
+  }
+  .slicknav_item a {
+    padding: 0;
+    margin: 0;
+  }
+  .slicknav_parent-link a {
+    padding: 0;
+    margin: 0;
+  }
 }
-
-.slicknav_nav ul {
-  padding: 0;
-  margin: 0;
-}
-
-.slicknav_nav ul ul li a {
-  padding-left: 25px;
-}
-
-/*
-.slicknav_nav li.first_item .menu_link {
-	padding: 6px 20px;
-}
-*/
-.slicknav_nav .slicknav_item {
-  padding: 6px 20px;
-}
-
-.slicknav_nav a {
-  text-decoration: none;
-  color: #8C8C8C;
-}
-
-.slicknav_nav .slicknav_item a {
-  padding: 0;
-  margin: 0;
-}
-
-.slicknav_nav li.first_item .menu_link:hover {
-  color: #fff;
-}
-
-.slicknav_nav .slicknav_item:hover {
-  background: #000;
-  color: #fff;
-}
-
-.slicknav_nav a:hover, .slicknav_nav .slicknav_item:hover a {
-  color: #fff;
-}
-
-.slicknav_nav .slicknav_txtnode {
-  margin-left: 15px;
-}
-
-/*
-.slicknav_nav li+ li{border-top: 1px solid #d1d1d1;}
-*/
-.slicknav_nav ul li a {
-  color: #606060;
-  padding: 6px 20px;
-}
-
-.slicknav_nav ul li:hover a {
-  background: #000;
-  color: #fff;
+.slicknav_brand {
+  color: $slicknav-color;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 7px 12px;
+  height: 44px;
 }
 
 .slicknav_open > a {
-  background: #000;
-  color: #fff;
+  background: $slicknav-toplink-background-color--open;
+  color: $slicknav-toplink-color--open;
 }
 
 .slicknav_open > a a, .slicknav_open > a > a {
-  color: #fff !important;
+  color: $slicknav-color--open !important;
 }
 
 .slicknav_open > ul {
-  background: #fefefe;
+  background: $slicknav-background--open;
 }
+
+//.slicknav_menu {
+//  line-height: normal;
+//}
+
 
 @media only screen and (min-width: 768px) {
   .slice_affinity_header .navbar {
