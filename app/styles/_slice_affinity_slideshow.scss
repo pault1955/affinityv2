@@ -1,7 +1,7 @@
 // ======================================
 // slice affinity slideshow
 // ======================================
-@media (min-width: 100px) {
+
 
   .slice_affinity_slideshow {
 
@@ -160,7 +160,7 @@
     padding: 10px 16px;
     border-radius: 3px;
     text-align: center;
-    width: 130px;
+    width: 150px;
     margin: 0 auto;
     -webkit-transition: background-color 500ms ease, border-color 500ms ease, color 500ms ease;
     -o-transition: background-color 500ms ease, border-color 500ms ease, color 500ms ease;
@@ -171,7 +171,6 @@
     background-color: #fff;
     color: #4d4d4d;
   }
-}
 
 @media (min-width: 480px) {
   .slice_affinity_slideshow .caption {

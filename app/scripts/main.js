@@ -32,17 +32,25 @@ $(document).ready(function () {
 
 
     $( '.bannerSlides ul li.gallery_li a img' ).each(function( ) {
-        var articleListLink = $(this).parent().attr('href');
+        var slideLink = $(this).parent().attr('href');
         var alt = $(this).attr('alt');
         var data = $.parseHTML( alt );
         var title = '<div class="slideTitle">' + ($(data).text().split('*')[ 0 ] || '') + '</div>';
         var subtitle = '<div class="slideText">' + ($(data).text().split('*')[ 1 ] || '') + '</div>';
-        var caption = '<div class="caption">' + title + '<div class="divider"></div>' + subtitle + '<a href="'+ articleListLink +'" class="slideButton">MORE DETAILS</a></div>';
+        var caption = '<div class="caption">' + title + '<div class="divider"></div>' + subtitle + '<a href="' + slideLink + '" class="slideButton">MORE DETAILS</a></div>';
         $(caption).insertAfter( this );
     });
 
+    $('.slice_affinity_4_al .info_cards .articleListSummary').each(function () {
+        var articleListLink = $(this).parent().find('.articleListImage a').attr('href');
+        var summaryText = $(this).find('span').text().split('*');
+        $(this).text(summaryText[0]);
+        var buttonText = summaryText[1];
+        var button = '<div class="info_cards_button_wrapper"> <a class="info_cards_button" href="' + articleListLink + '">' + buttonText + '</a></div>';
+        $(button).insertAfter(this);
+    });
 
-
+    $('.slice_affinity_4_al .info_cards > div').addClass('col-md-3 col-sm-6 col-xs-12');
 
   /* remove sub menus from Home   */
 

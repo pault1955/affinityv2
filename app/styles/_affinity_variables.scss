@@ -2,12 +2,7 @@
 //  affinity variables
 // ======================================
 
-// ======================================
-//  site wide
-// ======================================
 
-
-$container-max-width: 1280px;
 
 // ======================================
 //  affinity header
@@ -70,3 +65,47 @@ $slicknav-toplink-color--open: #000;
 
 //  slides
 // ======================================
+
+// ======================================
+//  affinity 4 al
+// ======================================
+
+//  info header
+// ===================================
+
+$info_header_title-color: #4d4d4d;
+$info_header_title-font-size: 25px;
+$info_header_title-font-family: "Open Sans", sans-serif;
+
+$info_header_text-color: #4d4d4d;
+$info_header_text-font-size: 18px;
+$info_header_text-font-family: "Open Sans", sans-serif;
+
+//  card layout
+// ===================================
+
+$info_cards_articleListImage-border-color: #d1d2d4;
+$info_cards_articleListImage-border-radius: 94px;
+$info_cards_articleListImage-border-width: 5px;
+
+$info_cards_articleListTitle-color: #4d4d4d;
+$info_cards_articleListTitle-font-size: 20px;
+$info_cards_articleListTitle-font-family: "Open Sans", sans-serif;
+
+$info_cards_articleListSummary-color: #4d4d4d;
+$info_cards_articleListSummary-font-size: 16px;
+$info_cards_articleListSummary-font-family: "Open Sans", sans-serif;
+
+$info_cards_articleListLink-color: #4d4d4d;
+$info_cards_articleListLink-font-size: 14px;
+$info_cards_articleListLink-font-family: "Open Sans", sans-serif;
+$info_cards_articleListLink-border: 1px solid #d1d2d4;
+$info_cards_articleListLink-padding: 5px 10px;
+
+$info_cards_button-border: 1px solid #d1d2d4;
+$info_cards_button-color: #4d4d4d;
+$info_cards_button-font-size: 14px;
+
+$info_cards_button-border--hover: 1px solid #5ac5c5;
+$info_cards_button-background-color--hover: #5ac5c5;
+$info_cards_button-color--hover: #fff;
