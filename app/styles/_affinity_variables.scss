@@ -2,7 +2,10 @@
 //  affinity variables
 // ======================================
 
-
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
 
 // ======================================
 //  affinity header
@@ -29,7 +32,7 @@ $nav_link-font-size: 18px;
 $nav_link-font-weight: normal;
 $nav_link_home-background-color:#5ac5c5;
 $nav_link-background-color: #f9f9f9;
-$nav_link-background-color--hover: #f0f0f0;
+$nav_link-background-color--hover: #f9f9f9;
 $nav_link_top-margin-top: 5px;
 $nav_link_home-margin-top: 0;
 
@@ -109,3 +112,23 @@ $info_cards_button-font-size: 14px;
 $info_cards_button-border--hover: 1px solid #5ac5c5;
 $info_cards_button-background-color--hover: #5ac5c5;
 $info_cards_button-color--hover: #fff;
+
+// ======================================
+//  affinity form
+// ======================================
+
+//  info header
+// ===================================
+
+//  form
+// ===================================
+
+$form-background-color: #eff0f2;
+$form_button-border: 1px solid #5ac5c5;
+$form_button-color: #fff;
+$form_button-font-size: 14px;
+$form_buttom-background-color: #5ac5c5;
+
+$form_button-border--hover: 1px solid #5ac5c5;
+$form_button-background-color--hover: #5ac5c5;
+$form_button-color--hover: #fff;

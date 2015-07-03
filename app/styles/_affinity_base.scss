@@ -1,8 +1,16 @@
 // ======================================
 //  site wide
 // ======================================
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
 
 $container-max-width: 1280px;
+
+body {
+  color: #4d4d4d;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
 
 // add float none to bootstrap center-block class
 .center-block {
