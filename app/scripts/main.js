@@ -52,7 +52,23 @@ $(document).ready(function () {
 
     $('.slice_affinity_4_al .info_cards > div').addClass('col-md-3 col-sm-6 col-xs-12');
 
-  /* remove sub menus from Home   */
+
+    // slice_affinity_latest_news
+
+    $('.slice_affinity_latest_news .news_cards > div').addClass('col-md-4  col-xs-8 center-block');
+
+    $('.slice_affinity_latest_news .articleListTitle a').each(function (index) {
+        var titleLink = $(this).attr("href");
+        $(this).parent().parent().find('.articleListLink').wrapInner('<a  href="' + titleLink + '">');
+    });
+
+    $('.slice_affinity_latest_news .articleListImage img').each(function (index) {
+        var imagePath = $(this).attr('src');
+        $(this).attr('src', imagePath.replace("/Publisher/GetResizedImage.aspx?w=380&h=156&url=/", "/"));
+    });
+
+
+    /* remove sub menus from Home   */
 
     $('ul.root_menu > li.has_sub_menu:first-child > ul.sub_menu').remove();
 

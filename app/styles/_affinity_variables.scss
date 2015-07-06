@@ -32,8 +32,8 @@ $nav_link-font-size: 18px;
 $nav_link-font-weight: normal;
 $nav_link_home-background-color:#5ac5c5;
 $nav_link-background-color: #f9f9f9;
-$nav_link-background-color--hover: #f9f9f9;
-$nav_link_top-margin-top: 5px;
+$nav_link-background-color--hover: transparent;
+$nav_link_top-margin-top: 4px;
 $nav_link_home-margin-top: 0;
 
 $nav_dropdown_link-font-size: 17px;
@@ -120,6 +120,7 @@ $info_cards_button-color--hover: #fff;
 //  info header
 // ===================================
 
+
 //  form
 // ===================================
 
@@ -132,3 +133,55 @@ $form_buttom-background-color: #5ac5c5;
 $form_button-border--hover: 1px solid #5ac5c5;
 $form_button-background-color--hover: #5ac5c5;
 $form_button-color--hover: #fff;
+
+// ======================================
+//  affinity latest news
+// ======================================
+
+$latest_news-background-color: #4d4d4d;
+
+//  info header
+// ===================================
+
+$info_header_reverse_title-color: #fff;
+$info_header_reverse_title-font-size: 25px;
+$info_header_reverse_title-font-family: "Open Sans", sans-serif;
+
+$info_header_reverse_text-color: #fff;
+$info_header_reverse_text-font-size: 18px;
+$info_header_reverse_text-font-family: "Open Sans", sans-serif;
+
+//  news articles
+// ===================================
+
+$news_cards_articleListTitle-color: #4d4d4d;
+$news_cards_articleListTitle-font-size: 20px;
+$news_cards_articleListTitle-font-family: "Open Sans", sans-serif;
+$news_cards_articleListTitle-background-color: #fff;
+
+$news_cards_articleListDate-color: #4d4d4d;
+$news_cards_articleListDate-font-size: 14px;
+$news_cards_articleListDate-font-family: "Open Sans", sans-serif;
+$news_cards_articleListDate-background-color: #fff;
+
+$news_cards_articleListSummary-color: #4d4d4d;
+$news_cards_articleListSummary-font-size: 16px;
+$news_cards_articleListSummary-font-family: "Open Sans", sans-serif;
+$news_cards_articleListSummary-background-color: #fff;
+
+$news_cards_articleListLink-color: #4d4d4d;
+$news_cards_articleListLink-font-size: 14px;
+$news_cards_articleListLink-font-family: "Open Sans", sans-serif;
+$news_cards_articleListLink-padding: 5px 10px;
+$news_cards_articleListLink-background-color: #fff;
+$news_cards_articleListLink-border-top: 1px solid #ededed;
+
+$news_cards_button-border: #d1d2d4;
+$news_cards_button-color: #eff0f2;
+$news_cards_button-background-color: transparent;
+$news_cards_button-color--hover: #fff;
+$news_cards_button-border--hover: #5ac5c5;
+$news_cards_button-background-color--hover: #5ac5c5;
+
+
+

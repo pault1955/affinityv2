@@ -35,6 +35,10 @@
   text-decoration: none;
 }
 
+.slice_affinity_header .siteLogo img {
+  max-width: 100px;
+}
+
 .slice_affinity_header .siteLogoName .siteName a {
   font-size: $site_logo-font-size;
   color: $site_logo-color;
