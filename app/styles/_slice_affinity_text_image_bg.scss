@@ -1,0 +1,40 @@
+// ======================================
+//  affinity text with background image
+// ======================================
+
+//  info header
+// ===================================
+
+.slice_affinity_text_image_bg {
+
+  padding-top: 40px;
+  background-image: url(../images/affinity-text-image-bg.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  height: 300px;
+  overflow: hidden;
+
+  .icon-cup {
+    max-width: 65px;
+  }
+  .info_header {
+
+    margin: 0 auto;
+    text-align: center;
+
+    .info_header_title {
+      color: $info_header_reverse_title-color;
+      font-size: $info_header_reverse_title-font-size;
+      font-family: $info_header_reverse_title-font-family;
+      font-weight: bold;
+    }
+    .info_header_text {
+      color: $info_header_reverse_text-color;
+      font-size: $info_header_reverse_text-font-size;
+      font-family: $info_header_reverse_text-font-family;
+      margin-bottom: 30px;
+    }
+  }
+
+}

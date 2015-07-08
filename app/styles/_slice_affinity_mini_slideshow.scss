@@ -87,7 +87,7 @@
   }
 
   .bx-wrapper .bx-next {
-    right: -47px;
+    right: -40px;
     background: url(../images/affinity-arrow-right-dark.png) no-repeat 20px center;
     opacity: 0.5;
     height: 76px;
@@ -162,7 +162,7 @@
     }
 
     .bx-wrapper .bx-controls-direction a {
-      top: -170px;
+      top: -163px;
       display: block;
     }
 
@@ -171,7 +171,7 @@
   @media (min-width: $breakpoint-md) {
 
     .bx-wrapper .bx-controls-direction a {
-      top: -175px;
+      top: -164px;
     }
 
   }
