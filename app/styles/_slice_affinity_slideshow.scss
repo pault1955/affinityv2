@@ -57,7 +57,7 @@
     height: $banner_slideshow_pager-width-height;
     -moz-border-radius: $banner_slideshow_pager-width-height / 2;
     -webkit-border-radius: $banner_slideshow_pager-width-height / 2;
-    border-radius: $banner_slideshow_pager-width-height banner
+    border-radius: $banner_slideshow_pager-width-height / 2;
   }
 
   .slice_affinity_slideshow .bx-wrapper .bx-pager.bx-default-pager a:hover,

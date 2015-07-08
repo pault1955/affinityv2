@@ -15,7 +15,7 @@
       color: $info_header_title-color;
       font-size: $info_header_title-font-size;
       font-family: $info_header_title-font-family;
-      line-height: $info_header_title-font-size * 1.5;
+      line-height: $info_header_title-font-size * 1;
     }
     .info_header_text {
       color: $info_header_text-color;
@@ -81,6 +81,7 @@
 
       .info_header_title {
         font-size: $info_header_title-font-size * 2;
+        line-height: $info_header_title-font-size * 2;
       }
       .info_header_text {
         margin-bottom: 35px;

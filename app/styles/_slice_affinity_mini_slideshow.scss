@@ -126,7 +126,7 @@
   .mini_slideshow_button {
     display: block;
     margin: 20px auto 40px;
-    max-width: 150px;
+    max-width: 210px;
     padding: 9px 15px 7px;
     border-radius: 2px;
     transition: background-color 500ms ease;
@@ -135,13 +135,13 @@
     letter-spacing: 2px;
     text-decoration: none;
     text-transform: uppercase;
-    border: 1px solid $mini_slideshow_button-border;
+    border: $mini_slideshow_button-border;
     background-color: $mini_slideshow_button-background-color;
     color: $mini_slideshow_button-color;
 
     &:hover {
       background-color: $mini_slideshow_button-background-color--hover;
-      border: 1px solid $mini_slideshow_button-border--hover;
+      border: $mini_slideshow_button-border--hover;
       color: $mini_slideshow_button-color--hover;
     }
   }
