@@ -80,8 +80,8 @@
       a {
 
         display: inline-block;
-        -webkit-transition: background-color 500ms ease;
-        transition: background-color 500ms ease;
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
         font-size: $news_cards_articleListLink-font-size;
         text-decoration: none;
         background-color: $news_cards_articleListLink-background-color;
@@ -89,7 +89,7 @@
         padding: 8px 20px 9px !important;
 
         &:hover {
-
+          color: #2aabab;
         }
       }
 
