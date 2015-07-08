@@ -65,6 +65,12 @@ $slicknav-toplink-color--open: #000;
 // ======================================
 //  affinity banner slideshow
 // ======================================
+$banner_slideshow-background-color: #fff;
+$banner_slideshow_pager-background-color: #d1d2d4;
+$banner_slideshow_pager-background-color--active: #5ac5c5;
+$banner_slideshow_pager-width-height: 16px;
+$banner_slideshow_control-background-color: #bde8e8;
+
 
 //  slides
 // ======================================
@@ -183,5 +189,28 @@ $news_cards_button-color--hover: #fff;
 $news_cards_button-border--hover: #5ac5c5;
 $news_cards_button-background-color--hover: #5ac5c5;
 
+// ======================================
+//  affinity Mini Slideshow
+// ======================================
 
+$mini_slideshow-background-color: #fff;
 
+//  info header
+// ===================================
+
+//  Mini Slideshow
+// ===================================
+
+$mini_slideshow_pager-background-color: #d1d2d4;
+$mini_slideshow_pager-background-color--active: #5ac5c5;
+$mini_slideshow_pager-width-height: 16px;
+$mini_slideshow_control-background-color: #fff;
+
+$mini_slideshow_button-background-color: #fff;
+$mini_slideshow_button-border: 1px solid #d1d2d4;
+$mini_slideshow_button-color: #4d4d4d;
+$mini_slideshow_button-font-size: 14px;
+
+$mini_slideshow_button-border--hover: 1px solid #5ac5c5;
+$mini_slideshow_button-background-color--hover: #5ac5c5;
+$mini_slideshow_button-color--hover: #fff;

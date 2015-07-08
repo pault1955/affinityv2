@@ -68,6 +68,18 @@ $(document).ready(function () {
     });
 
 
+    // mini-slideshow slice
+
+    $('.miniSlides .gallery_ul').show().bxSlider({
+        mode: 'fade',
+        auto: true,
+        pause: 8000,
+        speed: 500,
+        pager: true,
+        controls: true,
+        preloadImages: 'all'
+    });
+
     /* remove sub menus from Home   */
 
     $('ul.root_menu > li.has_sub_menu:first-child > ul.sub_menu').remove();
