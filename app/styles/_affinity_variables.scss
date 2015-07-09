@@ -258,6 +258,39 @@ $media_cards_button-background-color--hover: #5ac5c5;
 
 $text_image-background-image: #fff;
 
-//  info header
+// ======================================
+//  affinity 3 locations
+// ======================================
+
+//  card layout
 // ===================================
+
+$info_cards_image-border-color: #d1d2d4;
+$info_cards_image-border-radius: 94px;
+$info_cards_image-border-width: 5px;
+
+$info_cards_title-color: #4d4d4d;
+$info_cards_title-font-size: 20px;
+$info_cards_title-font-family: "Open Sans", sans-serif;
+
+// ======================================
+//  affinity community
+// ======================================
+
+$community-background-color: #eff0f2;
+
+//  community images
+// ===================================
+
+$card_grid_title-color: #4d4d4d;
+$card_grid_title-font-size: 16px;
+$card_grid_title-font-family: "Open Sans", sans-serif;
+$card_grid_title-background-color: #fff;
+
+$card_grid_button-border: #d1d2d4;
+$card_grid_button-color: #4d4d4d;
+$card_grid_button-background-color: transparent;
+$card_grid_button-color--hover: #fff;
+$card_grid_button-border--hover: #5ac5c5;
+$card_grid_button-background-color--hover: #5ac5c5;
 

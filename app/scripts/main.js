@@ -41,12 +41,25 @@ $(document).ready(function () {
         $(caption).insertAfter( this );
     });
 
-    $('.slice_affinity_4_al .info_cards > div').addClass('col-md-3 col-sm-6 col-xs-12');
+
+    // not used in production
+
+    $('.slice_affinity_4_al .info_cards .articleListSummary').each(function () {
+        var articleListLink = $(this).parent().find('.articleListImage a').attr('href');
+        var summaryText = $(this).find('span').text().split('*');
+        $(this).text(summaryText[0]);
+        var buttonText = summaryText[1];
+        var button = '<div class="info_cards_button_wrapper"> <a class="info_cards_button" href="' + articleListLink + '">' + buttonText + '</a></div>';
+        $(button).insertAfter(this);
+    });
+
+
+    $('.slice_affinity_4_al .info_cards > div').addClass('col-md-3   col-xs-8');
 
 
     // slice_affinity_latest_news
 
-    $('.slice_affinity_latest_news .news_cards > div').addClass('col-md-4  col-xs-8 col-xs-12 center-block');
+    $('.slice_affinity_latest_news .news_cards > div').addClass('col-xs-10 col-sm-4 center-block');
 
 
     $('.slice_affinity_latest_news .articleListTitle a').each(function (index) {
@@ -75,7 +88,7 @@ $(document).ready(function () {
 
     // slice_affinity_recent_media
 
-    $('.slice_affinity_recent_media .media_cards > span > div').addClass('col-md-4  col-xs-8 col-xs-12 center-block');
+    $('.slice_affinity_recent_media .media_cards > span > div').addClass('col-xs-10 col-sm-4 center-block');
 
     $('.slice_affinity_recent_media .mediaListTitle a').each(function (index) {
         var titleLink = $(this).attr("href");
@@ -87,6 +100,17 @@ $(document).ready(function () {
         $(this).attr('src', imagePath.replace("/Publisher/GetResizedImage.aspx?w=380&h=156&url=/", "/"));
     });
 
+
+    /* Card Grid - Community */
+
+    $('.slice_affinity_community .card_grid .gallery_li').addClass('col-xs-12 col-sm-6 col-md-4 center-block');
+
+    $('.slice_affinity_community .card_grid .gallery_li a').each(function () {
+        var cardGridLink = $(this).attr('href');
+        var cardGridTitle = $(this).find('img').attr('title');
+        var imgLink = '<div class="card_grid_title_wrapper"> <a class="card_grid_title" href="' + cardGridLink + '">' + cardGridTitle + '</a></div>';
+        $(imgLink).insertAfter(this);
+    });
 
     /* remove sub menus from Home   */
 

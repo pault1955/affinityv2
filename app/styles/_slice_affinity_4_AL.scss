@@ -28,9 +28,9 @@
   .info_cards {
     .articleListImage img {
       border: $info_cards_articleListImage-border-width solid $info_cards_articleListImage-border-color;
-      -webkit-border-radius: $info_cards-articleListImage-border-radius;
-      -moz-border-radius: $info_cards-articleListImage-border-radius;
-      border-radius: $info_cards-articleListImage-border-radius;
+      -webkit-border-radius: $info_cards_articleListImage-border-radius;
+      -moz-border-radius: $info_cards_articleListImage-border-radius;
+      border-radius: $info_cards_articleListImage-border-radius;
       display: block;
       margin: 0 auto 20px;
       max-width: 179px;
