@@ -26,7 +26,7 @@
 }
 
 .slice_affinity_header .siteLogoName {
-  text-align: center;
+  text-align: left;
   height: $site_logo_name-height;
   margin-top: $site_logo-margin-top;
 }
@@ -36,7 +36,7 @@
 }
 
 .slice_affinity_header .siteLogo img {
-  max-width: 100px;
+  max-width: $site_logo-max-width;
 }
 
 .slice_affinity_header .siteLogoName .siteName a {
@@ -342,7 +342,22 @@
   .slice_affinity_header .navbar {
     display: block;
   }
+  .slice_affinity_header .siteLogo img {
+    max-width: $site_logo-max-width * 1.2;
+  }
+  .slice_affinity_header .siteLogoName .siteName a {
+    font-size: $site_logo-font-size * 1.4;
+  }
+  .slice_affinity_header .siteLogoName {
+    text-align: center;
+  }
   #mobile_nav {
     display: none;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-md) {
+  .slice_affinity_header .root_menu > li > a {
+    padding: 9px 11px;
   }
 }

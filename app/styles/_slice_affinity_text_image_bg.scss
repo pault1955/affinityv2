@@ -16,7 +16,11 @@
   overflow: hidden;
 
   .icon-cup {
-    max-width: 65px;
+    text-align: center;
+    margin-bottom: 15px;
+    & img {
+      max-width: 65px;
+    }
   }
   .info_header {
 
@@ -25,15 +29,24 @@
 
     .info_header_title {
       color: $info_header_reverse_title-color;
-      font-size: $info_header_reverse_title-font-size;
+      font-size: $info_header_reverse_title-font-size * 0.8;
       font-family: $info_header_reverse_title-font-family;
-      font-weight: bold;
+      font-weight: normal;
     }
     .info_header_text {
       color: $info_header_reverse_text-color;
-      font-size: $info_header_reverse_text-font-size;
+      font-size: $info_header_reverse_text-font-size * 0.8;
       font-family: $info_header_reverse_text-font-family;
       margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: $breakpoint-md) {
+    .info_header_title {
+      font-size: $info_header_reverse_title-font-size;
+    }
+    .info_header_text {
+      font-size: $info_header_reverse_text-font-size;
     }
   }
 

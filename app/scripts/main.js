@@ -46,7 +46,7 @@ $(document).ready(function () {
 
     // slice_affinity_latest_news
 
-    $('.slice_affinity_latest_news .news_cards > div').addClass('col-md-4  col-xs-8 center-block');
+    $('.slice_affinity_latest_news .news_cards > div').addClass('col-md-4  col-xs-8 col-xs-12 center-block');
 
 
     $('.slice_affinity_latest_news .articleListTitle a').each(function (index) {
@@ -75,7 +75,7 @@ $(document).ready(function () {
 
     // slice_affinity_recent_media
 
-    $('.slice_affinity_recent_media .media_cards > span > div').addClass('col-md-4  col-xs-8 center-block');
+    $('.slice_affinity_recent_media .media_cards > span > div').addClass('col-md-4  col-xs-8 col-xs-12 center-block');
 
     $('.slice_affinity_recent_media .mediaListTitle a').each(function (index) {
         var titleLink = $(this).attr("href");
@@ -111,7 +111,37 @@ $(document).ready(function () {
         $('ul.sub_menu.sub_menu_level_1 > li.menu_item.menu_item_level_2.first_item').css('display','list-item');
         $('ul.root_menu > li.has_sub_menu > a').css('pointer-events','none');
         $('ul.root_menu > li.has_sub_menu:first-child > a').css('pointer-events','auto');
-        $('#nav ul.root_menu ul.sub_menu_level_1 > li.menu_item_level_2.first_item.last_item').css('pointer-events','auto');
+        $('ul.root_menu ul.sub_menu_level_1 > li.menu_item_level_2.first_item.last_item').css('pointer-events', 'auto');
+    }
+
+
+    /* tidy up forums */
+    if (location.pathname.toLowerCase().indexOf('/forums/threads.aspx') != -1 || location.pathname.toLowerCase().indexOf('/forums/messages.aspx') != -1)
+        $('.systemPageLeft').css({'display': 'none'});
+
+// style media system page
+    $('#btnSearchTemplate').parent().removeClass('media_option_right').addClass('media_option_left').css({'width': '100%'}).next().removeClass('media_option_right').addClass('media_option_left').css({'width': '100%'})
+
+// my area profile password input styling
+
+    $('.gridheader #_ctl0__ctl0_cphBody_cphContents_txt_old_password').parent().css({'width': '20%'}).parent().find('#_ctl0__ctl0_cphBody_cphContents_Button1').css({
+        'height': '23px',
+        'padding-top': '0',
+        'border-top-width': '0'
+    });
+
+//style change password
+
+    $('.systemPageContent #_ctl0__ctl0_cphBody_cphContents_LoginDetailsBox_P').closest('table').parent().closest('table').find('input').css({'margin-bottom': '10px'});
+
+//remove XML image from Forums
+
+    $(".systemPageContent img[src$='/images/xml.gif']").parent().text('XML').css({'margin-left': '10px'})
+
+// style login box
+
+    if ($('div [id$="LoginNameValidator"]').length) {
+        $('.systemPageContent .shadedbox').attr({"style": "max-width:300px !important;"})
     }
 
 });
