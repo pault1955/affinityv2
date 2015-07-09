@@ -65,7 +65,7 @@
         display: inline-block;
         margin-top: 10px;
         margin-right: 5px;
-        padding: 9px 15px 7px;
+        padding: 9px 15px;
         -webkit-border-radius: 2px;
         -moz-border-radius: 2px;
         border-radius: 2px;
@@ -87,29 +87,7 @@
       }
     }
   }
-  /*
-    @media (min-width: $breakpoint-xs) {
 
-
-     .info_cards {
-
-        .articleListTitle a {
-          margin: 0 auto 20px;
-
-        }
-      }
-       .info_cards {
-
-        .articleListSummary {
-          min-height: 25px;
-        }
-
-        .info_cards_button_wrapper {
-          margin-bottom: 35px;
-        }
-      }
-    }
-  */
   @media (min-width: $breakpoint-sm) {
 
     .info_header {

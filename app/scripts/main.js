@@ -103,7 +103,7 @@ $(document).ready(function () {
 
     /* Card Grid - Community */
 
-    $('.slice_affinity_community .card_grid .gallery_li').addClass('col-xs-12 col-sm-6 col-md-4 center-block');
+    $('.slice_affinity_community .card_grid .gallery_li').addClass('col-xs-8 col-sm-6 col-md-4 center-block');
 
     $('.slice_affinity_community .card_grid .gallery_li a').each(function () {
         var cardGridLink = $(this).attr('href');

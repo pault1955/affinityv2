@@ -1,8 +1,8 @@
 // ======================================
-//  Affinity form - info and sign up form
+//  Affinity get in touch form
 // ======================================
 
-.slice_affinity_form {
+.slice_affinity_get_in_touch {
   margin-top: 30px;
   margin-bottom: 30px;
 
@@ -26,9 +26,9 @@
     }
   }
 
-  .form_wrapper {
+  .get_in_touch_wrapper {
 
-    background-color: $form-background-color;
+    background-color: $get_in_touch-background-color;
     padding: 35px 20px 0;
 
     &:after {
@@ -56,14 +56,14 @@
         border-radius: 2px;
         -webkit-transition: background-color 500ms ease;
         transition: background-color 500ms ease;
-        font-size: $form_button-font-size;
+        font-size: $get_in_touch_button-font-size;
         text-align: center;
         letter-spacing: 2px;
         text-decoration: none;
-        text-transform: uppercase;
-        border: $form_button-border;
-        background-color: $form_buttom-background-color;
-        color: $form_button-color;
+        text-transget_in_touch: uppercase;
+        border: $get_in_touch_button-border;
+        background-color: $get_in_touch_buttom-background-color;
+        color: $get_in_touch_button-color;
 
         &:hover {
           opacity: 0.7;
