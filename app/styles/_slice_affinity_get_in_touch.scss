@@ -3,8 +3,9 @@
 // ======================================
 
 .slice_affinity_get_in_touch {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: $get_in_touch-background-color;
 
   .info_header {
 
@@ -12,15 +13,15 @@
     text-align: center;
 
     .info_header_title {
-      color: $info_header_title-color;
-      font-size: $info_header_title-font-size;
-      font-family: $info_header_title-font-family;
-      line-height: $info_header_title-font-size * 1.3;
+      color: $info_header_reverse_title-color;
+      font-size: $info_header_reverse_title-font-size;
+      font-family: $info_header_reverse_title-font-family;
+      line-height: $info_header_reverse_title-font-size * 1.3;
     }
     .info_header_text {
-      color: $info_header_text-color;
-      font-size: $info_header_text-font-size;
-      font-family: $info_header_text-font-family;
+      color: $info_header_reverse_text-color;
+      font-size: $info_header_reverse_text-font-size;
+      font-family: $info_header_reverse_text-font-family;
       margin-top: 20px;
       margin-bottom: 30px;
     }
@@ -39,9 +40,13 @@
 
     label {
       font-weight: normal;
+      color: $get_in_touch_label-color;
+    }
+    .form_fields_line1, .form_fields_line2, .form_fields_line3, .form_fields_line4 {
+      margin-bottom: 15px;
     }
 
-    .form_fields_line3 {
+    .form_fields_line4 {
 
       text-align: center;
       margin-bottom: 45px;
@@ -60,28 +65,40 @@
         text-align: center;
         letter-spacing: 2px;
         text-decoration: none;
-        text-transget_in_touch: uppercase;
+        text-transform: uppercase;
         border: $get_in_touch_button-border;
         background-color: $get_in_touch_buttom-background-color;
         color: $get_in_touch_button-color;
 
         &:hover {
-          opacity: 0.7;
+          color: $get_in_touch_button-color--hover;
+          border: $get_in_touch_button-border--hover;
+          background-color: $get_in_touch_button-background-color--hover;
         }
       }
+    }
+
+  }
+
+  .form_address {
+    color: $get_in_touch_form_address-color;
+    text-align: center;
+
+    .site_address {
+      margin-bottom: 8px;
     }
   }
 
   @media (min-width: $breakpoint-sm) {
 
-    margin-top: 60px;
-    margin-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     .info_header {
 
       .info_header_title {
-        font-size: $info_header_title-font-size * 2;
-        line-height: $info_header_title-font-size * 2;
+        font-size: $info_header_reverse_title-font-size * 2;
+        line-height: $info_header_reverse_title-font-size * 2;
       }
       .info_header_text {
         margin-bottom: 35px;

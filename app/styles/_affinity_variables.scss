@@ -301,15 +301,38 @@ $card_grid_button-background-color--hover: #5ac5c5;
 //  info header
 // ===================================
 
-//  get n touch form
+//  get in touch form fields
 // ===================================
 
-$get_in_touch-background-color: #eff0f2;
-$get_in_touch_button-border: 1px solid #5ac5c5;
+$get_in_touch-background-color: #5ac5c5;
+$get_in_touch_label-color: #fff;
+
+$get_in_touch_button-border: 1px solid #fff;
 $get_in_touch_button-color: #fff;
 $get_in_touch_button-font-size: 14px;
-$get_in_touch_buttom-background-color: #5ac5c5;
+$get_in_touch_buttom-background-color: transparent;
 
-$get_in_touch_button-border--hover: 1px solid #5ac5c5;
-$get_in_touch_button-background-color--hover: #5ac5c5;
+$get_in_touch_button-border--hover: 1px solid #7fd7d7;
+$get_in_touch_button-background-color--hover: #7fd7d7;
 $get_in_touch_button-color--hover: #fff;
+
+$get_in_touch_form_address-color: #fff;
+
+// ======================================
+//  affinity footer
+// ======================================
+
+$footer_statusbar_button-color: #5ac5c5;
+$footer_statusbar_button-color--hover: #fff;
+$footer_statusbar_button-background-color--hover: #5ac5c5;
+$footer-background-color: #373f42;
+$footer_search_button-color: #fff;
+$footer_search_button-background-color: #5ac5c5;
+$footer_search_button-background-color--hover: #7fd7d7;
+
+// ======================================
+//  affinity footerbar
+// ======================================
+
+$footerbar-background-color: #4d4d4d;
+$footerbar-color: #b1b1b1;

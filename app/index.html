@@ -667,40 +667,123 @@
     <div class="container">
         <div class="info_header row">
             <div class="info_header_title">GET IN TOUCH</div>
-            <div class="info_header_text col-md-8 center-block">If you have questions or need to get in touch, please
+            <div class="info_header_text col-md-10 center-block">If you have questions or need to get in touch, please
                 complete the form below and we will get back to you as soon as we can. Or you can call or write using
                 the details below the form.
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="form_wrapper col-md-8 col-md-offset-2">
+        <div class="get_in_touch_wrapper row col-md-8 center-block">
             <div class="ArticleBody">
                 <div class="form_fields_line1 row col-sm-12 ">
-                    <div class="form-group col-sm-6">
-                        <label for="yourName">Your Name:</label>
-                        <input type="text" class="form-control" lang="1" id="yourName" placeholder="Your Name">
-                    </div>
+
+                    <label for="yourName">Your Name:</label>
+                    <input type="text" class="form-control" lang="1" id="yourName" placeholder="Enter your Name">
+
 
                 </div>
                 <div class="form_fields_line2 row col-sm-12">
-                    <div class="form-group col-sm-6 ">
-                        <label for="yourEmailAddress">Email</label>
-                        <input type="email" class="form-control" lang="1" id="yourEmailAddress"
-                               placeholder="Email Address">
-                    </div>
-
+                    <label for="yourEmailAddress">Your email address:</label>
+                    <input type="email" class="form-control" lang="1" id="yourEmailAddress"
+                           placeholder="Enter your email address">
                 </div>
 
                 <div class="form_fields_line3 row col-sm-12">
-                    <div class="form-group col-sm-6 ">
-                        <label for="yourMessage">Email</label>
-                        <input type="email" class="form-control" lang="1" id="yourMessage" placeholder="Your Message">
-                    </div>
-
+                    <label for="yourMessage">Your message:</label>
+                    <textarea class="form-control" rows="5" lang="1" id="yourMessage"
+                              placeholder="Leave your message here"></textarea>
                 </div>
                 <div class="form_fields_line4 row col-sm-12">
                     <input class="sitebutton btn" onclick="doFormSubmission(this);" type="button" value="SEND"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form_address col-md-6 center-block">
+                <div class="site_address">Musgrave Farm, Horningsea Road, Cambridge, CB5 8SZ</div>
+                <div class="site_phone"><span>Call:&nbsp;</span><span>01223 790222</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="slice_affinity_footer">
+    <div class="container">
+        <div class="row footer center_block">
+            <div class="footer_column col-xs-12 col-sm-6 col-md-4  center_block">
+                <div class="footer_title">
+                    Connect with us:
+                </div>
+                <a class="footer_icon_block" href="http://www.facebook.com" target="_blank"><img
+                        alt="facebook" src="images/affinity-icon-facebook.png"> </a> <a
+                    class="footer_icon_block twitter" href="http://www.twitter.com" target="_blank"> <img
+                    alt="twitter" src="images/affinity-icon-twitter.png"> </a> <a
+                    class="footer_icon_block youtube" href="http://www.youtube.com" target="_blank"> <img
+                    alt="youtube" src="images/affinity-icon-youtube.png"> </a></div>
+
+            <div class="footer_column col-xs-12 col-sm-6  col-md-4  center_block">
+                <div class="footer_title">
+                    Members
+                </div>
+
+                <div>
+                    <div class="statusbar">
+                        <div class="greeting_div">Good morning, Insight</div>
+                        <a href="/User/Logout.aspx" title="Sign out of the web site" class="logout_link">Logout</a><a
+                            href="javascript:openLogin();" title="Access site administration pages"
+                            class="weboffice_link">Web Office</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_column col-xs-12  col-md-4  center_block">
+                <div class="footer_title">
+                    What are you looking for?
+                </div>
+
+                <div class="search_box">
+                    <label class="search_title" for="_ctl0__ctl0_cphBody__ctl7_searchSite">Site Search</label>
+
+
+                    <div class="search_div"
+                         onkeydown="if(event.keyCode==13){document.getElementById('_ctl0__ctl0_cphBody__ctl7_searchSiteGo').click();return false}else{return true}">
+                        <input type="text" id="_ctl0__ctl0_cphBody__ctl7_searchSite" name="searchSite" size="22"
+                               value="Search the Site" onblur="if(this.value==''){this.value='Search the Site';}"
+                               onfocus="if(this.value=='Search the Site'){this.value='';}" class="text">
+                    </div>
+
+                    <input type="button" id="_ctl0__ctl0_cphBody__ctl7_searchSiteGo" value="Go" class="button"
+                           onclick="doSiteSearch(this.id,'Search the Site',false,null,null);">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="slice_affinity_footerbar">
+    <div class="container">
+        <div class="row footerbar">
+            <div>
+                <div>
+                    <a class="footer" onmouseover="window.status='Visit ChurchInsight';return true;"
+                       onmouseout="window.status='';" href="http://www.churchinsight.com/" target="_blank">a <strong>Church</strong>Insight
+                        site</a>
+                    <a id="footer_mobile" href="/Mobile/default.aspx?home=yes" title="High Accessibility Version"
+                       onmouseover="window.status='High Accessibility Version';return true;"
+                       onmouseout="window.status = '';">Low Graphics</a>
+                    <a id="footer_copyright" href="/User/Copyright.aspx" title="Copyright Statement"
+                       onmouseover="window.status='Copyright Statement';return true;" onmouseout="window.status='';">Copyright</a>
+                    <a id="footer_tc" href="/User/TermsAndConditions.aspx" title="Terms and Conditions"
+                       onmouseover="window.status='Terms and Conditions';return true;" onmouseout="window.status='';">T&amp;Cs</a>
+                    <a id="footer_privacy" href="/User/PrivacyPolicy.aspx" title="Privacy Policy"
+                       onmouseover="window.status='Privacy Policy';return true;"
+                       onmouseout="window.status='';">Privacy</a>
+                    <a id="footer_help" href="/User/Help.aspx" title="Help with using this site"
+                       onmouseover="window.status='Help with using this site';return true;"
+                       onmouseout="window.status='';">Help</a>
+                    <span id="footer_charity">Registered Charity 123456789</span>
                 </div>
             </div>
         </div>

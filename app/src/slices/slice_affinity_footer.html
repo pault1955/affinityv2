@@ -1,0 +1,55 @@
+<section class="slice_affinity_footer">
+    <div class="container">
+        <div class="row footer center_block">
+            <div class="footer_column col-xs-12 col-sm-6 col-md-4  center_block">
+                <div class="footer_title">
+                    Connect with us:
+                </div>
+                <a class="footer_icon_block" href="http://www.facebook.com" target="_blank"><img
+                        alt="facebook" src="images/affinity-icon-facebook.png"> </a> <a
+                    class="footer_icon_block twitter" href="http://www.twitter.com" target="_blank"> <img
+                    alt="twitter" src="images/affinity-icon-twitter.png"> </a> <a
+                    class="footer_icon_block youtube" href="http://www.youtube.com" target="_blank"> <img
+                    alt="youtube" src="images/affinity-icon-youtube.png"> </a></div>
+
+            <div class="footer_column col-xs-12 col-sm-6  col-md-4  center_block">
+                <div class="footer_title">
+                    Members
+                </div>
+
+                <div>
+                    <div class="statusbar">
+                        <div class="greeting_div">Good morning, Insight</div>
+                        <a href="/User/Logout.aspx" title="Sign out of the web site" class="logout_link">Logout</a><a
+                            href="javascript:openLogin();" title="Access site administration pages"
+                            class="weboffice_link">Web Office</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_column col-xs-12  col-md-4  center_block">
+                <div class="footer_title">
+                    What are you looking for?
+                </div>
+
+                <div class="search_box">
+                    <label class="search_title" for="_ctl0__ctl0_cphBody__ctl7_searchSite">Site Search</label>
+
+
+                    <div class="search_div"
+                         onkeydown="if(event.keyCode==13){document.getElementById('_ctl0__ctl0_cphBody__ctl7_searchSiteGo').click();return false}else{return true}">
+                        <input type="text" id="_ctl0__ctl0_cphBody__ctl7_searchSite" name="searchSite" size="22"
+                               value="Search the Site" onblur="if(this.value==''){this.value='Search the Site';}"
+                               onfocus="if(this.value=='Search the Site'){this.value='';}" class="text">
+                    </div>
+
+                    <input type="button" id="_ctl0__ctl0_cphBody__ctl7_searchSiteGo" value="Go" class="button"
+                           onclick="doSiteSearch(this.id,'Search the Site',false,null,null);">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
