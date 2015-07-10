@@ -10,7 +10,7 @@
     font-size: 13px;
     font-family: Lato, sans-serif;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 0 20px;
     line-height: 30px;
 
     a {
@@ -45,7 +45,7 @@
         background-position: center center;
         background-color: transparent;
         height: 30px;
-        margin-bottom: 25px;
+        margin-bottom: 10px;
 
         &.footer:hover {
           background-image: url('../images/affinity-churchinsight-logo-hover.png');
@@ -59,10 +59,14 @@
     }
 
     @media only screen and (min-width: $breakpoint-md) {
+
+      padding: 25px 0 0;
+
       a {
 
         &.footer {
           width: 25%;
+          margin-bottom: 25px;
         }
 
         &#footer_mobile::after, &#footer_copyright::after, &#footer_tc::after, &#footer_privacy::after {
@@ -78,6 +82,5 @@
         width: 25%;
       }
     }
-
   }
 }
