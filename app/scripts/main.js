@@ -59,7 +59,7 @@ $(document).ready(function () {
 
     // slice_affinity_latest_news
 
-    $('.slice_affinity_latest_news .news_cards > div').addClass('col-xs-8 col-sm-6 col-md-4 center-block');
+    $('.slice_affinity_latest_news .news_cards > div').addClass('col-xs-10 col-sm-6 col-md-4 center-block');
 
 
     $('.slice_affinity_latest_news .articleListTitle a').each(function (index) {
@@ -88,7 +88,7 @@ $(document).ready(function () {
 
     // slice_affinity_recent_media
 
-    $('.slice_affinity_recent_media .media_cards > span > div').addClass('col-xs-8 col-sm-6 col-md-4 center-block');
+    $('.slice_affinity_recent_media .media_cards > span > div').addClass('col-xs-10 col-sm-6 col-md-4 center-block');
 
     $('.slice_affinity_recent_media .mediaListTitle a').each(function (index) {
         var titleLink = $(this).attr("href");
@@ -103,7 +103,7 @@ $(document).ready(function () {
 
     /* Card Grid - Community */
 
-    $('.slice_affinity_community .card_grid .gallery_li').addClass('col-xs-8 col-sm-6 col-md-4 center-block');
+    $('.slice_affinity_community .card_grid .gallery_li').addClass('col-xs-10 col-sm-6 col-md-4 center-block');
 
     $('.slice_affinity_community .card_grid .gallery_li a').each(function () {
         var cardGridLink = $(this).attr('href');
