@@ -20,13 +20,16 @@
       font-size: $info_header_title-font-size;
       font-family: $info_header_title-font-family;
       font-weight: bold;
+      line-height: $info_header_title-line-height;
+      margin-bottom: $info_header_title-margin-bottom;
 
     }
     .info_header_text {
       color: $info_header_text-color;
       font-size: $info_header_text-font-size;
       font-family: $info_header_text-font-family;
-      margin-bottom: 30px;
+      line-height: $info_header_text-line-height;
+      margin-bottom: $info_header_text-margin-bottom * 3;
     }
   }
 

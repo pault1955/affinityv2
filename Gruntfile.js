@@ -49,7 +49,7 @@ module.exports = function (grunt) {
         files: ['Gruntfile.js']
       },
       includes: {
-        files: ['<%= config.app %>/src/slices/*.html',  '<%= config.app %>/src/index.html'],
+        files: ['<%= config.app %>/src/slices/*.html', '<%= config.app %>/src/*.html'],
         tasks: ['includes']
       },
       compass: {
@@ -116,7 +116,7 @@ module.exports = function (grunt) {
 
     includes: {
       files: {
-        src: ['<%= config.app %>/src/index.html'], // Source files
+        src: ['<%= config.app %>/src/index.html', '<%= config.app %>/src/content.html'], // Source files
         dest: '<%= config.app %>', // Destination directory
         flatten: true,
         cwd: '.',
@@ -213,7 +213,7 @@ module.exports = function (grunt) {
     wiredep: {
       app: {
         ignorePath: /^\/|\.\.\//,
-        src: ['<%= config.app %>/index.html'],
+        src: ['<%= config.app %>/index.html', '<%= config.app %>/content.html'],
         exclude: ['lib/bootstrap-sass-official/assets/javascripts/bootstrap.js']
       },
       sass: {
@@ -221,7 +221,7 @@ module.exports = function (grunt) {
         ignorePath: /(\.\.\/){1,2}lib\//
       },
       test: {
-        src: ['<%= config.app %>/index.html']
+        src: ['<%= config.app %>/index.html', '<%= config.app %>/content.html']
       }
     },
 
@@ -247,7 +247,7 @@ module.exports = function (grunt) {
       options: {
         dest: '<%= config.dist %>'
       },
-      html: '<%= config.app %>/index.html'
+      html: ['<%= config.app %>/index.html', '<%= config.app %>/content.html']
     },
 
     // Performs rewrites based on rev and the useminPrepare configuration

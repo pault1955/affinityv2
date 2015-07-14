@@ -12,7 +12,7 @@
   background-size: cover;
   background-position: 50% 50%;
   background-attachment: fixed;
-  height: 360px;
+  height: 410px;
   overflow: hidden;
 
   .icon-cup {
@@ -29,15 +29,18 @@
 
     .info_header_title {
       color: $info_header_reverse_title-color;
-      font-size: $info_header_reverse_title-font-size * 0.8;
+      font-size: $info_header_reverse_title-font-size;
       font-family: $info_header_reverse_title-font-family;
+      line-height: $info_header_reverse_title-line-height;
+      margin-bottom: $info_header_reverse_title-margin-bottom;
       font-weight: normal;
     }
     .info_header_text {
       color: $info_header_reverse_text-color;
-      font-size: $info_header_reverse_text-font-size * 0.8;
+      font-size: $info_header_reverse_text-font-size;
       font-family: $info_header_reverse_text-font-family;
-      margin-bottom: 30px;
+      line-height: $info_header_reverse_text-line-height;
+      margin-bottom: $info_header_reverse_text-margin-bottom * 3;
     }
   }
 
