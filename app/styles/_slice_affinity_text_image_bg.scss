@@ -39,7 +39,7 @@
       color: $info_header_reverse_text-color;
       font-size: $info_header_reverse_text-font-size;
       font-family: $info_header_reverse_text-font-family;
-      line-height: $info_header_reverse_text-line-height;
+      line-height: $info_header_reverse_text-line-height * 0.8;
       margin-bottom: $info_header_reverse_text-margin-bottom * 3;
     }
   }

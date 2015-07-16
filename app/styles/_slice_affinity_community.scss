@@ -107,4 +107,21 @@
       font-size: 20px;
     }
   }
+
+  // attempted fix for IE11 flexbox bug
+  @media (min-width: $breakpoint-sm) {
+    .gallery_li img {
+      height: 175px;
+    }
+  }
+  @media (min-width: $breakpoint-md) {
+    .gallery_li img {
+      height: 124px;
+    }
+  }
+  @media (min-width: $breakpoint-lg) {
+    .gallery_li img {
+      height: 154px;
+    }
+  }
 }

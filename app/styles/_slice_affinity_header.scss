@@ -150,7 +150,7 @@
   .root_menu li li.has_sub_menu:before {
     content: ">";
     position: absolute;
-    right: 7px;
+    right: 8px;
     top: 0;
     line-height: 30px;
     height: 30px;
@@ -371,7 +371,7 @@
       padding-left: 20px;
 
       & > li > a {
-        padding: 9px 15px;
+        padding: 9px 10px;
       }
     }
   }

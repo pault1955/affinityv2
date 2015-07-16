@@ -19,6 +19,8 @@
       color: $info_header_reverse_title-color;
       font-size: $info_header_reverse_title-font-size;
       font-family: $info_header_reverse_title-font-family;
+      line-height: $info_header_reverse_title-line-height;
+      margin-bottom: $info_header_reverse_title-margin-bottom;
     }
     .info_header_text {
       color: $info_header_reverse_text-color;
@@ -119,5 +121,20 @@
       color: $news_cards_button-color--hover;
     }
   }
-
+  // attempted fix for IE11 flexbox bug
+  @media (min-width: $breakpoint-sm) {
+    .articleListImage img {
+      height: 175px;
+    }
+  }
+  @media (min-width: $breakpoint-md) {
+    .articleListImage img {
+      height: 124px;
+    }
+  }
+  @media (min-width: $breakpoint-lg) {
+    .articleListImage img {
+      height: 154px;
+    }
+  }
 }

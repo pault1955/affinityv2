@@ -26,15 +26,22 @@ $(document).ready(function () {
     $('.root_menu').slicknav({
         prependTo: '#mobile_nav',
         allowParentLinks: true,
-        label: 'Menu',
+        label: "Menu",
+        'afterOpen': function () {
+            $('.slice_affinity_header .slicknav_menu').css({'margin-bottom': '50px'});
+        },
+        'afterClose': function () {
+            $('.slice_affinity_header .slicknav_menu').css({'margin-bottom': '0'});
+        },
         'init': function(){
             if ($('body').hasClass('guest_user')) {
-                $('<li class="sign_in_nav"><a href="/user/login.aspx"class="login_item" title="Login to access more features">Login</a></li><li><a href="/User/Registration.aspx" class="login_item" title="Apply for web site username and password" class="register_link">Register</a></li>').insertAfter('.slicknav_nav > .last_item').fadeIn('slow');
+                $('<li class="sign_in_nav"><a href="/user/login.aspx"class="login_item" title="Login to access more features">Login</a></li><li><a href="/User/Registration.aspx" class="login_item" title="Apply for web site username and password" class="register_link">Register</a></li>').insertAfter('.slicknav_nav > .last_item').fadeIn("slow");
             }else{
-                $('<li class="log_out_nav"><a href="/User/Logout.aspx"class="login_item" title="Sign out of the web site" class="logout_link">Logout</a></li><li><a href="/Admin/Default.aspx" class="login_item" title="Access site administration pages" class="weboffice_link">Web Office</a></li>').insertAfter('.slicknav_nav > .last_item').fadeIn('slow');
+                $('<li class="log_out_nav"><a href="/User/Logout.aspx"class="login_item" title="Sign out of the web site" class="logout_link">Logout</a></li><li><a href="/Admin/Default.aspx" class="login_item" title="Access site administration pages" class="weboffice_link">Web Office</a></li>').insertAfter('.slicknav_nav > .last_item').fadeIn("slow");
             }
         }
     });
+
 
     $('.bannerSlides .gallery_ul').show().bxSlider({
         mode: 'fade',
@@ -75,7 +82,7 @@ $(document).ready(function () {
 
     // slice_affinity_latest_news
 
-    $('.slice_affinity_latest_news .news_cards > div').addClass('col-xs-12 col-sm-6 col-md-4');
+    $('.slice_affinity_latest_news .news_cards > div').addClass('col-xs-12 col-sm-6 col-md-4 center-block');
 
 
     $('.slice_affinity_latest_news .articleListTitle a').each(function (index) {
@@ -113,7 +120,7 @@ $(document).ready(function () {
 
     $('.slice_affinity_recent_media .mediaListImage img').each(function (index) {
         var imagePath = $(this).attr('src');
-        $(this).attr('src', imagePath.replace("/Publisher/GetResizedImage.aspx?w=380&h=156&url=/", "/"));
+        $(this).attr('src', imagePath.replace("/Publisher/GetResizedImage.aspx?w=280&h=157&url=/", "/"));
     });
 
 

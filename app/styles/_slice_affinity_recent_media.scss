@@ -138,5 +138,20 @@
       color: $media_cards_button-color--hover;
     }
   }
-
+  // attempted fix for IE11 flexbox bug
+  @media (min-width: $breakpoint-sm) {
+    .mediaListImage img {
+      height: 175px;
+    }
+  }
+  @media (min-width: $breakpoint-md) {
+    .mediaListImage img {
+      height: 124px;
+    }
+  }
+  @media (min-width: $breakpoint-lg) {
+    .mediaListImage img {
+      height: 154px;
+    }
+  }
 }

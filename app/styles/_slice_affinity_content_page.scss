@@ -4,7 +4,7 @@
 .slice_affinity_content_page {
 
   .content_page_banner_image {
-    margin-top: 10px;
+    margin-top: -50px;
   }
 
   .content_page_main {
@@ -110,18 +110,21 @@
 
       }
       .content_page_main_sidebar_image {
-        margin-top: 25px;
-        margin-bottom: 30px;
+        margin-top: 25px 50px 30px;
       }
 
     }
 
   }
 
-  @media (min-width: $breakpoint-xs) {
+  @media (min-width: $breakpoint-sm) {
+
+    .content_page_banner_image {
+      margin-top: 10px;
+    }
 
     .content_page_main_sidebar_image {
-      padding: 0 50px;
+      padding: 25px 0 30px;
 
     }
 
