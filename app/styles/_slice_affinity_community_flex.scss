@@ -35,10 +35,14 @@
   }
 
   .card_grid .gallery_ul {
+    display: flex;
+    flex-wrap: wrap;
     padding-left: 0;
 
     .gallery_li {
       margin-bottom: 40px;
+      display: flex;
+      flex-direction: column;
 
       a img {
         -webkit-transition: all 500ms ease;
@@ -53,11 +57,7 @@
           -moz-transform: rotate(0);
         }
       }
-    }
-    @media (min-width: $breakpoint-sm) {
-      .gallery_li {
-        float: left;
-      }
+
     }
     .card_grid_title {
       background-color: $card_grid_title-background-color;
@@ -108,4 +108,20 @@
     }
   }
 
+  // attempted fix for IE11 flexbox bug
+  @media (min-width: $breakpoint-sm) {
+    .gallery_li img {
+      height: 175px;
+    }
+  }
+  @media (min-width: $breakpoint-md) {
+    .gallery_li img {
+      height: 124px;
+    }
+  }
+  @media (min-width: $breakpoint-lg) {
+    .gallery_li img {
+      height: 154px;
+    }
+  }
 }

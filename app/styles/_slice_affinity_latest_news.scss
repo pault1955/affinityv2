@@ -31,13 +31,10 @@
   }
 
   .news_cards {
-    display: flex;
-    flex-wrap: wrap;
 
     & > div {
       margin-bottom: 40px;
-      display: flex;
-      flex-direction: column;
+      float: left;
     }
     .articleListImage img {
       display: block;
@@ -52,6 +49,7 @@
         font-size: $news_cards_articleListTitle-font-size;
         font-family: $news_cards_articleListTitle-font-family;
         text-decoration: none;
+        font-weight: bold;
       }
 
     }
@@ -71,7 +69,6 @@
       font-family: $news_cards_articleListSummary-font-family;
       background-color: $news_cards_articleListSummary-background-color;
       padding: 5px 20px 20px !important;
-      flex: 1 0 auto;
     }
 
     .articleListLink {
@@ -96,7 +93,13 @@
       }
 
     }
-
+    /*
+    @media (min-width: $breakpoint-sm ) {
+      & > div:last-child {
+        float: none;
+      }
+    }
+*/
   }
 
   .news_cards_button {
@@ -121,20 +124,5 @@
       color: $news_cards_button-color--hover;
     }
   }
-  // attempted fix for IE11 flexbox bug
-  @media (min-width: $breakpoint-sm) {
-    .articleListImage img {
-      height: 175px;
-    }
-  }
-  @media (min-width: $breakpoint-md) {
-    .articleListImage img {
-      height: 124px;
-    }
-  }
-  @media (min-width: $breakpoint-lg) {
-    .articleListImage img {
-      height: 154px;
-    }
-  }
+
 }

@@ -1,10 +1,8 @@
 $(document).ready(function () {
 
-    $( 'ul.root_menu > li:first-child' ).addClass( 'first' );
-    $( 'ul.root_menu > li:last-child' ).addClass( 'last' );
+    $('ul.root_menu > li:first-child').addClass('first first_item');
+    $('ul.root_menu > li:last-child').addClass('last last_item');
 
-    $('ul.root_menu li:first-child').addClass('first_item');
-    $('ul.root_menu li:last-child').addClass('last_item');
 
     /* remove sub menus from Home   */
 
@@ -82,7 +80,40 @@ $(document).ready(function () {
 
     // slice_affinity_latest_news
 
+    equalheight = function (container) {
+
+        var currentTallest = 0,
+            currentRowStart = 0,
+            rowDivs = new Array(),
+            $el,
+            topPosition = 0;
+        $(container).each(function () {
+
+            $el = $(this);
+            $($el).height('auto')
+            topPostion = $el.position().top;
+
+            if (currentRowStart != topPostion) {
+                for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
+                    rowDivs[currentDiv].height(currentTallest);
+                }
+                rowDivs.length = 0; // empty the array
+                currentRowStart = topPostion;
+                currentTallest = $el.height();
+                rowDivs.push($el);
+            } else {
+                rowDivs.push($el);
+                currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+            }
+            for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
+                rowDivs[currentDiv].height(currentTallest);
+            }
+        });
+    }
+
+
     $('.slice_affinity_latest_news .news_cards > div').addClass('col-xs-12 col-sm-6 col-md-4 center-block');
+    $('.slice_affinity_latest_news .news_cards > div:last-child').removeClass('center-block').addClass('col-sm-offset-3 col-md-offset-0');
 
 
     $('.slice_affinity_latest_news .articleListTitle a').each(function (index) {
@@ -95,6 +126,21 @@ $(document).ready(function () {
         $(this).attr('src', imagePath.replace("/Publisher/GetResizedImage.aspx?w=380&h=156&url=/", "/"));
     });
 
+
+    $(window).load(function () {
+        equalheight('.slice_affinity_latest_news .articleListImage');
+        equalheight('.slice_affinity_latest_news .articleListTitle');
+        equalheight('.slice_affinity_latest_news .articleListDate');
+        equalheight('.slice_affinity_latest_news .articleListSummary');
+    });
+
+
+    $(window).resize(function () {
+        equalheight('.slice_affinity_latest_news .articleListImage');
+        equalheight('.slice_affinity_latest_news .articleListTitle');
+        equalheight('.slice_affinity_latest_news .articleListDate');
+        equalheight('.slice_affinity_latest_news .articleListSummary');
+    });
 
     // mini-slideshow slice
 
@@ -112,6 +158,7 @@ $(document).ready(function () {
     // slice_affinity_recent_media
 
     $('.slice_affinity_recent_media .media_cards > span > div').addClass('col-xs-12 col-sm-6 col-md-4 center-block');
+    $('.slice_affinity_recent_media .media_cards > span > div:last-child').removeClass('center-block').addClass('col-sm-offset-3 col-md-offset-0');
 
     $('.slice_affinity_recent_media .mediaListTitle a').each(function (index) {
         var titleLink = $(this).attr("href");
@@ -123,10 +170,23 @@ $(document).ready(function () {
         $(this).attr('src', imagePath.replace("/Publisher/GetResizedImage.aspx?w=280&h=157&url=/", "/"));
     });
 
+    $(window).load(function () {
+        equalheight('.slice_affinity_recent_media .mediaListImage');
+        equalheight('.slice_affinity_recent_media .mediaListTitle');
+        equalheight('.slice_affinity_recent_media .mediaListDesc');
+    });
+
+
+    $(window).resize(function () {
+        equalheight('.slice_affinity_recent_media .mediaListImage');
+        equalheight('.slice_affinity_recent_media .mediaListTitle');
+        equalheight('.slice_affinity_recent_media .mediaListDesc');
+    });
 
     /* Card Grid - Community */
 
-    $('.slice_affinity_community .card_grid .gallery_li').addClass('col-xs-10 col-sm-6 col-md-4 center-block');
+    // $('.slice_affinity_community .card_grid .gallery_li').addClass('col-xs-10 col-sm-6 col-md-4 center-block');
+    $('.slice_affinity_community .card_grid .gallery_li').addClass('col-xs-10 col-sm-6 col-sm-offset-3 col-md-4  col-md-offset-0 center-block');
 
     $('.slice_affinity_community .card_grid .gallery_li a').each(function () {
         var cardGridLink = $(this).attr('href');
@@ -205,6 +265,8 @@ $(document).ready(function () {
     if ($('div [id$="LoginNameValidator"]').length) {
         $('.systemPageContent .shadedbox').attr({"style": "max-width:300px !important;"})
     }
-
-
+    /*   $(window).load(function () {
+     $('.slice_affinity_latest_news .articleListImage, .slice_affinity_latest_news .articleListTitle, .slice_affinity_latest_news .articleListSummary').matchHeight();
+     });
+     */
 });

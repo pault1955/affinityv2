@@ -49,7 +49,8 @@
       font-size: $info_header_reverse_title-font-size * 1.5;
     }
     .info_header_text {
-      font-size: $info_header_reverse_text-font-size;
+      font-size: $info_header_reverse_text-font-size * 1.4;
+      line-height: $info_header_reverse_text-line-height * 1.4;
     }
   }
 
