@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    //add classes
+
     $('ul.root_menu > li:first-child').addClass('first first_item');
     $('ul.root_menu > li:last-child').addClass('last last_item');
 
