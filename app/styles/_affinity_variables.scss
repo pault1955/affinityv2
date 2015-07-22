@@ -7,6 +7,18 @@ $breakpoint-sm: 768px;
 $breakpoint-md: 992px;
 $breakpoint-lg: 1200px;
 
+$affinity_link-color: #2aabab;
+$affinity_link-color--hover: #5ac5c5;
+
+$sitebutton_button-border: 1px solid #cdd0df;
+$sitebutton_button-color: #4d4d4d;
+$sitebutton_button-font-size: 14px;
+$sitebutton_button-background-color: transparent;
+
+$sitebutton_button-border--hover: 1px solid #5ac5c5;
+$sitebutton_button-background-color--hover: #5ac5c5;
+$sitebutton_button-color--hover: #fff;
+
 // ======================================
 //  affinity header
 // ======================================
@@ -320,7 +332,7 @@ $get_in_touch_label-color: #fff;
 $get_in_touch_button-border: 1px solid #fff;
 $get_in_touch_button-color: #fff;
 $get_in_touch_button-font-size: 14px;
-$get_in_touch_buttom-background-color: transparent;
+$get_in_touch_button-background-color: transparent;
 
 $get_in_touch_button-border--hover: 1px solid #7fd7d7;
 $get_in_touch_button-background-color--hover: #7fd7d7;
