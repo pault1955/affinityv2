@@ -17,6 +17,7 @@
       font-family: $info_header_title-font-family;
       margin-bottom: $info_header_title-margin-bottom;
       line-height: $info-header_title-line-height;
+      font-weight: 900;
     }
     .info_header_text {
       color: $info_header_text-color;
@@ -59,7 +60,7 @@
         transition: background-color 500ms ease;
         font-size: $form_button-font-size;
         text-align: center;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         text-decoration: none;
         text-transform: uppercase;
         border: $form_button-border;
@@ -86,6 +87,7 @@
       }
       .info_header_text {
         margin-bottom: 35px;
+        font-size: $info_header_text-font-size * 1.3;
       }
     }
 

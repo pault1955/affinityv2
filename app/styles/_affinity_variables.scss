@@ -26,6 +26,7 @@ $site_name-margin-bottom: 75px;
 // ======================================
 
 $nav_container-max-width: 960px;
+$nav_container-width: 730px;
 $nav_background-color: #f5f5f5;
 $nav_link-color: #4d4d4d ;
 $nav_link-color--hover: #2aabab;
@@ -37,7 +38,7 @@ $nav_link-background-color--hover: transparent;
 $nav_link_top-margin-top: 4px;
 $nav_link_home-margin-top: 0;
 
-$nav_dropdown_link-font-size: 17px;
+$nav_dropdown_link-font-size: 15px;
 $nav_dropdown_link-background-color: #f5f5f5;
 $nav_dropdown_link-color: #4d4d4d;
 $nav_dropdown_link-color--hover: #2aabab;
@@ -64,6 +65,7 @@ $slicknav-background--open: #f5f5f5;
 $slicknav-toplink-background-color--open: #f5f5f5;
 $slicknav-toplink-color--open: #2aabab;
 $slicknav-font-size: 16px;
+$slicknav_sub_menu-background-color: #fff;
 
 // ======================================
 //  affinity banner slideshow
@@ -72,11 +74,19 @@ $banner_slideshow-background-color: #fff;
 $banner_slideshow_pager-background-color: #d1d2d4;
 $banner_slideshow_pager-background-color--active: #5ac5c5;
 $banner_slideshow_pager-width-height: 16px;
-$banner_slideshow_control-background-color: #bde8e8;
+$banner_slideshow_control-background-color: #6bc4c4;
 
 
-//  slides
 // ======================================
+//  affinity banner slideshow + publicity
+// ======================================
+$banner_slideshow_pub-background-color: #fff;
+$banner_slideshow_pub_pager-background-color: #51a7c8;
+$banner_slideshow_pub_pager-background-color--active: #5ac5c5;
+$banner_slideshow_pub_pager-width-height: 27px;
+$banner_slideshow_pub_control-background-color: #bde8e8;
+
+
 
 // ======================================
 //  affinity 4 al
@@ -118,11 +128,11 @@ $info_cards_articleListLink-font-family: "Open Sans", sans-serif;
 $info_cards_articleListLink-border: 1px solid #d1d2d4;
 $info_cards_articleListLink-padding: 5px 10px;
 
-$info_cards_button-border: 1px solid #d1d2d4;
+$info_cards_button-border: 2px solid #d1d2d4;
 $info_cards_button-color: #4d4d4d;
 $info_cards_button-font-size: 14px;
 
-$info_cards_button-border--hover: 1px solid #5ac5c5;
+$info_cards_button-border--hover: 2px solid #5ac5c5;
 $info_cards_button-background-color--hover: #5ac5c5;
 $info_cards_button-color--hover: #fff;
 
@@ -138,12 +148,12 @@ $info_cards_button-color--hover: #fff;
 // ===================================
 
 $form-background-color: #eff0f2;
-$form_button-border: 1px solid #5ac5c5;
+$form_button-border: 2px solid #5ac5c5;
 $form_button-color: #fff;
 $form_button-font-size: 14px;
 $form_buttom-background-color: #5ac5c5;
 
-$form_button-border--hover: 1px solid #5ac5c5;
+$form_button-border--hover: 2px solid #5ac5c5;
 $form_button-background-color--hover: #5ac5c5;
 $form_button-color--hover: #fff;
 
@@ -218,11 +228,11 @@ $mini_slideshow_pager-width-height: 16px;
 $mini_slideshow_control-background-color: #fff;
 
 $mini_slideshow_button-background-color: #fff;
-$mini_slideshow_button-border: 1px solid #d1d2d4;
+$mini_slideshow_button-border: 2px solid #d1d2d4;
 $mini_slideshow_button-color: #4d4d4d;
 $mini_slideshow_button-font-size: 14px;
 
-$mini_slideshow_button-border--hover: 1px solid #5ac5c5;
+$mini_slideshow_button-border--hover: 2px solid #5ac5c5;
 $mini_slideshow_button-background-color--hover: #5ac5c5;
 $mini_slideshow_button-color--hover: #fff;
 
@@ -317,12 +327,12 @@ $card_grid_button-background-color--hover: #5ac5c5;
 $get_in_touch-background-color: #5ac5c5;
 $get_in_touch_label-color: #fff;
 
-$get_in_touch_button-border: 1px solid #fff;
+$get_in_touch_button-border: 2px solid #fff;
 $get_in_touch_button-color: #fff;
 $get_in_touch_button-font-size: 14px;
 $get_in_touch_buttom-background-color: transparent;
 
-$get_in_touch_button-border--hover: 1px solid #7fd7d7;
+$get_in_touch_button-border--hover: 2px solid #7fd7d7;
 $get_in_touch_button-background-color--hover: #7fd7d7;
 $get_in_touch_button-color--hover: #fff;
 

@@ -17,6 +17,8 @@
       font-size: $info_header_title-font-size;
       font-family: $info_header_title-font-family;
       line-height: $info_header_title-font-size * 2;
+      font-weight: bold;
+
     }
 
   }
@@ -132,7 +134,7 @@
     transition: background-color 500ms ease;
     font-size: 14px;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
     border: $mini_slideshow_button-border;

@@ -18,6 +18,8 @@
       font-family: $info_header_title-font-family;
       line-height: $info_header_title-line-height;
       margin-bottom: $info_header_title-margin-bottom;
+      font-weight: 900;
+
     }
   }
 
@@ -64,7 +66,7 @@
           transition: background-color 500ms ease;
           font-size: $info_cards_button-font-size;
           text-align: center;
-          letter-spacing: 2px;
+          letter-spacing: 1px;
           text-decoration: none;
           text-transform: uppercase;
           border: $info_cards_button-border;
