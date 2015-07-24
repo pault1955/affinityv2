@@ -70,11 +70,45 @@ blockquote {
   font-size: 14px;
 }
 
+a {
+  color: $affinity_link-color;
+
+  &:hover {
+    color: $affinity_link-color--hover;
+    text-decoration: none;
+  }
+}
+
+.sitebutton {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 5px;
+  padding: 9px 15px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: background-color 500ms ease;
+  transition: background-color 500ms ease;
+  font-size: $sitebutton_button-font-size;
+  text-align: center;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: $sitebutton_button-border;
+  background-color: $sitebutton_button-background-color;
+  color: $sitebutton_button-color;
+
+  &:hover {
+    color: $sitebutton_button-color--hover;
+    border: $sitebutton_button-border--hover;
+    background-color: $sitebutton_button-background-color--hover;
+  }
+}
 @media (min-width: $breakpoint-sm) {
 
   body {
     font-size: 16px;
-    line-height: 22px;
+    line-height: 24px;
   }
 
   h1 {
@@ -108,7 +142,7 @@ blockquote {
   }
 
   p {
-
+    margin-bottom: 24px;
   }
 
   blockquote {
