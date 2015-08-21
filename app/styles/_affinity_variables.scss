@@ -27,7 +27,7 @@ $sitebutton_button-color--hover: #fff;
 // ======================================
 
 $site_logo_name-height: 123px;
-$site_logo-margin-top:20px;
+$site_logo-margin-top:0;
 $site_logo-font-size: 26px;
 $site_logo-max-width: 85px;
 $site_logo-color: #4d4d4d;
@@ -42,7 +42,7 @@ $nav_container-width: 820px;
 $nav_background-color: #f5f5f5;
 $nav_link-color: #4d4d4d ;
 $nav_link-color--hover: #2aabab;
-$nav_link-font-size: 18px;
+$nav_link-font-size: 14px;
 $nav_link-font-weight: normal;
 $nav_link_home-background-color:#5ac5c5;
 $nav_link-background-color: #f9f9f9;
@@ -50,7 +50,7 @@ $nav_link-background-color--hover: transparent;
 $nav_link_top-margin-top: 4px;
 $nav_link_home-margin-top: 0;
 
-$nav_dropdown_link-font-size: 15px;
+$nav_dropdown_link-font-size: 14px;
 $nav_dropdown_link-background-color: #f5f5f5;
 $nav_dropdown_link-color: #4d4d4d;
 $nav_dropdown_link-color--hover: #2aabab;
@@ -108,16 +108,16 @@ $banner_slideshow_pub_control-background-color: #bde8e8;
 // ===================================
 
 $info_header_title-color: #4d4d4d;
-$info_header_title-font-size: 25px;
+$info_header_title-font-size: 28px;
 $info_header_title-font-family: "Open Sans", sans-serif;
-$info_header_title-margin-bottom: 8px;
+$info_header_title-margin-bottom: 10px;
 $info-header_title-line-height: 28px;
 
 $info_header_text-color: #4d4d4d;
-$info_header_text-font-size: 14px;
+$info_header_text-font-size: 15px;
 $info_header_text-font-family: "Open Sans", sans-serif;
 $info_header_text-margin-bottom: 8px;
-$info-header_text-line-height: 24px;
+$info-header_text-line-height: 20px;
 
 //  card layout
 // ===================================
@@ -179,16 +179,16 @@ $latest_news-background-color: #4d4d4d;
 // ===================================
 
 $info_header_reverse_title-color: #fff;
-$info_header_reverse_title-font-size: 25px;
+$info_header_reverse_title-font-size: 28px;
 $info_header_reverse_title-font-family: "Open Sans", sans-serif;
-$info_header_reverse_title-margin-bottom: 8px;
+$info_header_reverse_title-margin-bottom: 10px;
 $info-header_reverse_title-line-height: 28px;
 
 $info_header_reverse_text-color: #fff;
-$info_header_reverse_text-font-size: 14px;
+$info_header_reverse_text-font-size: 15px;
 $info_header_reverse_text-font-family: "Open Sans", sans-serif;
 $info_header_reverse_text-margin-bottom: 8px;
-$info-header_reverse_text-line-height: 24px;
+$info-header_reverse_text-line-height: 20px;
 
 //  news articles
 // ===================================

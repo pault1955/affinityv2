@@ -254,7 +254,7 @@
     }
   }
   .slicknav_btn {
-    margin: -60px 5px 6px;
+    margin: 0;
     text-decoration: none;
     text-shadow: 0 1px 1px $slicknav_button-text-shadow;
     -webkit-border-radius: 4px;
@@ -372,12 +372,16 @@
 
   @media only screen and (min-width: $breakpoint-sm) {
 
+    .siteLogoName {
+      margin-top: $site_logo-margin-top + 20px;
+    }
+
     nav a {
-      font-size: $nav_link-font-size * .9;
+      font-size: $nav_link-font-size;
     }
 
     .root_menu {
-      padding-left: 20px;
+      padding-left: 0;
       margin: 0 auto;
       width: $nav_container-width;
 
@@ -385,5 +389,17 @@
         padding: 9px 10px;
       }
     }
+  }
+
+  @media only screen and (min-width: $breakpoint-lg) {
+
+    nav a {
+      font-size: $nav_link-font-size * 1.2;
+    }
+
+    .root_menu > li ul a {
+      font-size: $nav_dropdown_link-font-size * 1;
+    }
+
   }
 }

@@ -87,7 +87,8 @@
     .info_header {
 
       .info_header_title {
-        font-size: $info_header_title-font-size * 1.6;
+        font-size: $info_header_title-font-size * 1.4;
+        line-height: $info-header_title-line-height * 1.4;
         margin-bottom: 0;
       }
       .info_header_text {
