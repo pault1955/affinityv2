@@ -17,9 +17,9 @@ body {
   max-width: 1350px
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $breakpoint-lg) {
   .container {
-    width: 1310px;
+    width: $breakpoint-lg - 30px;
   }
 }
 
