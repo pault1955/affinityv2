@@ -32,7 +32,7 @@
   .get_in_touch_wrapper {
 
     background-color: $get_in_touch-background-color;
-    padding: 35px 20px 0;
+    padding: 0px 20px 0;
 
     &:after {
       content: "";
@@ -103,9 +103,14 @@
         line-height: $info_header_reverse_title-font-size * 1.5;
       }
       .info_header_text {
-        margin-bottom: 35px;
+        margin-bottom: 0;
         font-size: $info_header_text-font-size * 1.2;
       }
+    }
+
+
+    .get_in_touch_wrapper {
+      padding: 20px 20px 0;
     }
 
   }

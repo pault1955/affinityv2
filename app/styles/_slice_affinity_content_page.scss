@@ -110,6 +110,28 @@
         }
 
       }
+
+      .content_page_sidebar_button {
+        display: block;
+        margin: 25px 50px 30px;
+        padding: 10px 10px 12px 50px;
+        border: 2px solid #5ac5c5;
+        border-radius: 2px;
+        background-color: #5ac5c5;
+        background-image: url('../images/affinity-sidebar-icon.png');
+        background-position: 14px 50%;
+        background-size: auto 22px;
+        background-repeat: no-repeat;
+        -webkit-transition: border 500ms ease, background-color 500ms ease;
+        -o-transition: border 500ms ease, background-color 500ms ease;
+        transition: border 500ms ease, background-color 500ms ease;
+        color: white;
+        text-decoration: none;
+      }
+      .content_page_sidebar_button:hover {
+        opacity: 0.7;
+      }
+
       .content_page_main_sidebar_image {
         margin: 25px 50px 30px;
       }
@@ -130,7 +152,7 @@
           margin-top: 10px;
         }
 
-        .content_page_main_sidebar_image {
+        .content_page_main_sidebar_image, .content_page_sidebar_button {
           margin: 25px 0;
 
         }

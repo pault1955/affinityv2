@@ -10,7 +10,7 @@
   margin-top: 30px;
   margin-bottom: 0;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
   background-color: $community-background-color;
 
   .info_header {
@@ -56,6 +56,7 @@
       float: left;
     }
   }
+
   .card_grid .gallery_ul {
     padding-left: 0;
 
@@ -88,17 +89,28 @@
       display: block;
       -webkit-transition: all 500ms ease;
       transition: all 500ms ease;
+      cursor: default;
+    }
 
-      &:hover {
-        color: #2aabab;
-      }
+    .card_grid_subtitle {
+      background-color: $card_grid_subtitle-background-color;
+      padding: 0 15px 10px !important;
+      color: $card_grid_subtitle-color;
+      font-size: $card_grid_subtitle-font-size;
+      font-family: $card_grid_subtitle-font-family;
+      font-weight: 400;
+      text-decoration: none;
+      display: block;
+      -webkit-transition: all 500ms ease;
+      transition: all 500ms ease;
+      cursor: default;
     }
 
   }
 
   .card_grid_button {
     display: block;
-    margin: 0 auto 20px;
+    margin: 0 auto 40px;
     max-width: 206px;
     padding: 9px 15px;
     border-radius: 2px;
@@ -114,7 +126,7 @@
 
     &:hover {
       background-color: $card_grid_button-background-color--hover;
-      border: 1px solid $card_grid_button-border--hover;
+      border: 2px solid $card_grid_button-border--hover;
       color: $card_grid_button-color--hover;
     }
   }
@@ -123,6 +135,10 @@
     padding-bottom: 40px;
 
     .card_grid_title {
+      font-size: 20px;
+    }
+
+    .card_grid_subtitle {
       font-size: 20px;
     }
   }

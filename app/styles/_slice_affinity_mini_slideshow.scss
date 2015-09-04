@@ -5,7 +5,7 @@
 .slice_affinity_mini_slideshow {
 
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 
   .info_header {
 
@@ -151,7 +151,6 @@
   @media (min-width: $breakpoint-sm) {
 
     margin-top: 60px;
-    margin-bottom: 10px;
 
     .info_header {
 

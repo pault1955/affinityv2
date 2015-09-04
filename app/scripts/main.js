@@ -212,6 +212,7 @@ $(document).ready(function () {
     // $('.slice_affinity_community .card_grid .gallery_li').addClass('col-xs-10 col-sm-6 col-md-4 center-block');
     $('.slice_affinity_community .card_grid .gallery_li').addClass('col-xs-10 col-sm-6 col-sm-offset-3 col-md-4  col-md-offset-0 center-block');
 
+    /*
     $('.slice_affinity_community .card_grid .gallery_li a').each(function () {
         var cardGridLink = $(this).attr('href');
         var cardGridTitle = $(this).find('img').attr('title');
@@ -219,6 +220,17 @@ $(document).ready(function () {
         $(imgLink).insertAfter(this);
     });
 
+    */
+
+    $( ".slice_affinity_community .card_grid .gallery_li img" ).each(function( index ) {
+        var cardGridLink = $(this).parent().attr("href");
+        var cardGridAlt = $(this).attr('alt');
+        var cardGridData = $.parseHTML( cardGridAlt );
+        var cardGridTitle = '<div class="card_grid_title">' + ($(cardGridData).text().split('*')[ 0 ] || '') + '</div>';
+        var cardGridSubtitle = '<div class="card_grid_subtitle">' + ($(cardGridData).text().split('*')[ 1 ] || '') + '</div>';
+        var cardGridCaption = '<div class="card_grid_caption">' + cardGridTitle + cardGridSubtitle + '</div>';
+        $(cardGridCaption).insertAfter( this );
+    });
 
 
     /* allow drop down menus to work on android */
