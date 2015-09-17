@@ -28,6 +28,8 @@ $(document).ready(function () {
         prependTo: '#mobile_nav',
         allowParentLinks: true,
         label: "Menu",
+        closedSymbol: '&#9660;',
+        openedSymbol: '&#9654;',
         'init': function(){
             if ($('body').hasClass('guest_user')) {
                 $('<li class="sign_in_nav"><a href="/user/login.aspx"class="login_item" title="Login to access more features">Login</a></li><li><a href="/User/Registration.aspx" class="login_item" title="Apply for web site username and password" class="register_link">Register</a></li>').insertAfter('.slicknav_nav > .last_item').fadeIn("slow");
@@ -177,6 +179,11 @@ $(document).ready(function () {
         controls: true,
         preloadImages: 'all'
     });
+
+    // video slice
+
+
+    $('.video_wrapper').fitVids();
 
 
     // slice_affinity_recent_media

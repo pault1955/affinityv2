@@ -110,6 +110,9 @@ a {
     background-color: $sitebutton_button-background-color--hover;
   }
 }
+.preview_overlay_content img {
+  width: 20px;
+}
 
 @media (min-width: $breakpoint-sm) {
 

@@ -180,16 +180,19 @@ module.exports = function (grunt) {
         httpGeneratedImagesPath: '../images/generated',
         httpFontsPath: 'fonts',
         relativeAssets: false,
-        assetCacheBuster: false
+        assetCacheBuster: false,
+        noLineComments: true
       },
       dist: {
         options: {
-          generatedImagesDir: '<%= config.dist %>/images/generated'
+          generatedImagesDir: '<%= config.dist %>/images/generated',
+          noLineComments: true
         }
       },
       server: {
         options: {
-          debugInfo: false
+          debugInfo: false,
+          noLineComments: true
         }
       }
     },
@@ -252,7 +255,14 @@ module.exports = function (grunt) {
     // additional tasks can operate on them
     useminPrepare: {
       options: {
-        dest: '<%= config.dist %>'
+        dest: '<%= config.dist %>',
+        flow: {
+          steps: {
+            js: ['concat'],
+            css: ['concat']
+          },
+          post: {}
+        }
       },
       html: ['<%= config.app %>/index.html', '<%= config.app %>/content.html']
     },
@@ -457,8 +467,8 @@ module.exports = function (grunt) {
     'concurrent:dist',
     'autoprefixer',
     'concat',
-    'cssmin',
-    'uglify',
+    // 'cssmin',
+    // 'uglify',
     'copy:dist',
     'modernizr',
     'rev',
