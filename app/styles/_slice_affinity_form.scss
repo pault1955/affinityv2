@@ -3,8 +3,9 @@
 // ======================================
 
 .slice_affinity_form {
-  margin-top: 30px;
-  margin-bottom: 30px;
+
+  padding-top: 30px;
+  padding-bottom: 60px;
 
   .info_header {
 
@@ -76,8 +77,6 @@
 
   @media (min-width: $breakpoint-sm) {
 
-    margin-top: 60px;
-    margin-bottom: 60px;
 
     .info_header {
 

@@ -113,6 +113,16 @@ a {
 .preview_overlay_content img {
   width: 20px;
 }
+/* view all forums  icon */
+.forums_boxout_contents a img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+/* directory search icon */
+tr.gridheader a img {
+  width: 25px;
+}
 
 @media (min-width: $breakpoint-sm) {
 

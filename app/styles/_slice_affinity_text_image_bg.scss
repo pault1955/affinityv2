@@ -11,7 +11,7 @@
   background-image: url(../images/affinity-text-image-bg.jpg);
   background-size: cover;
   background-position: 50% 50%;
-  background-attachment: fixed;
+  background-attachment: scroll;
   height: 410px;
   overflow: hidden;
 
@@ -45,7 +45,7 @@
   }
   @media (min-width: $breakpoint-sm) {
 
-    background-attachment: scroll;
+    background-attachment: fixed;
     padding-top: 70px;
     height: 500px;
   }
