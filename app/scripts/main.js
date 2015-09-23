@@ -67,6 +67,30 @@ $(document).ready(function () {
         $(caption).insertAfter( this );
     });
 
+
+    $('.slice_affinity_slideshow_advert .gallery_ul').show().bxSlider({
+        mode: 'fade',
+        auto: true,
+        pause: 8000,
+        speed: 500,
+        pager: true,
+        controls: true,
+        preloadImages: 'all'
+    });
+
+
+    $( '.slice_affinity_slideshow_advert ul li.gallery_li a img' ).each(function( ) {
+        var slideLink = $(this).parent().attr('href');
+        var alt = $(this).attr('alt');
+        var data = $.parseHTML( alt );
+        var title = '<div class="slideTitle">' + ($(data).text().split('*')[ 0 ] || '') + '</div>';
+        var subtitle = '<div class="slideText">' + ($(data).text().split('*')[ 1 ] || '') + '</div>';
+        var caption = '<div class="caption">' + title + '<div class="divider"></div>' + subtitle + '<a href="' + slideLink + '" class="slideButton">MORE DETAILS</a></div>';
+        $(caption).insertAfter( this );
+    });
+
+
+
     $('.bannerSlides_pub .gallery_ul').show().bxSlider({
         mode: 'fade',
         auto: true,
