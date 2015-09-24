@@ -78,7 +78,7 @@ $(document).ready(function () {
         preloadImages: 'all'
     });
 
-
+/*
     $( '.slice_affinity_slideshow_advert ul li.gallery_li a img' ).each(function( ) {
         var slideLink = $(this).parent().attr('href');
         var alt = $(this).attr('alt');
@@ -88,6 +88,7 @@ $(document).ready(function () {
         var caption = '<div class="caption">' + title + '<div class="divider"></div>' + subtitle + '<a href="' + slideLink + '" class="slideButton">MORE DETAILS</a></div>';
         $(caption).insertAfter( this );
     });
+*/
 
 
 

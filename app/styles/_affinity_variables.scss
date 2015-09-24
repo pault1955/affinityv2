@@ -2,10 +2,9 @@
 //  affinity variables
 // ======================================
 
-$breakpoint-xs: 480px;
 $breakpoint-sm: 768px;
 $breakpoint-md: 992px;
-$breakpoint-lg: 1310px;
+$breakpoint-lg: 1200px;
 
 $affinity_link-color: #2aabab;
 $affinity_link-color--hover: #5ac5c5;
@@ -90,13 +89,13 @@ $banner_slideshow_control-background-color: #6bc4c4;
 
 
 // ======================================
-//  affinity banner slideshow + publicity
+//  affinity banner slideshow + advert
 // ======================================
-$banner_slideshow_pub-background-color: #fff;
-$banner_slideshow_pub_pager-background-color: #51a7c8;
-$banner_slideshow_pub_pager-background-color--active: #5ac5c5;
-$banner_slideshow_pub_pager-width-height: 27px;
-$banner_slideshow_pub_control-background-color: #bde8e8;
+$banner_slideshow_advert-background-color: #f5f5f5;
+$banner_slideshow_advert_pager-background-color: #51a7c8;
+$banner_slideshow_advert_pager-background-color--active: #5ac5c5;
+$banner_slideshow_advert_pager-width-height: 16px;
+$banner_slideshow_advert_control-background-color: #bde8e8;
 
 
 
