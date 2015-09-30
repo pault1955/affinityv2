@@ -459,7 +459,9 @@ ul.media_recording_links {
 .media_recording img {
   max-width: inherit;
 }
-
+.media_recording_title {
+  color: #333991;
+}
 @media (max-width: 767px) {
   #media_controls .system_option {
     width:100%

@@ -78,7 +78,7 @@ $(document).ready(function () {
         preloadImages: 'all'
     });
 
-/*
+
     $( '.slice_affinity_slideshow_advert ul li.gallery_li a img' ).each(function( ) {
         var slideLink = $(this).parent().attr('href');
         var alt = $(this).attr('alt');
@@ -88,7 +88,7 @@ $(document).ready(function () {
         var caption = '<div class="caption">' + title + '<div class="divider"></div>' + subtitle + '<a href="' + slideLink + '" class="slideButton">MORE DETAILS</a></div>';
         $(caption).insertAfter( this );
     });
-*/
+
 
 
 
@@ -241,7 +241,7 @@ $(document).ready(function () {
 
     /* Card Grid - Community */
 
-    // $('.slice_affinity_community .card_grid .gallery_li').addClass('col-xs-10 col-sm-6 col-md-4 center-block');
+
     $('.slice_affinity_community .card_grid .gallery_li').addClass('col-xs-10 col-sm-6 col-sm-offset-3 col-md-4  col-md-offset-0 center-block');
 
     /*
@@ -263,6 +263,14 @@ $(document).ready(function () {
         var cardGridCaption = '<div class="card_grid_caption">' + cardGridTitle + cardGridSubtitle + '</div>';
         $(cardGridCaption).insertAfter( this );
     });
+
+
+
+    /* 4 graphic block */
+
+
+    $('.slice_affinity_4_graphic_blocks .gallery_li').addClass('col-xs-6 col-md-3');
+
 
 
     /* allow drop down menus to work on android */

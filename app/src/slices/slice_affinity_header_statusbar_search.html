@@ -1,19 +1,42 @@
-<!--
-<section class="slice_affinity_header">
+<section class="slice_affinity_header_statusbar_search">
     <div id="mobile_nav"></div>
+
+
     <div class="container">
-        <div class="row">
+        <div>
             <div class="siteLogoName">
-  <span class="siteLogo">
-    <a id="_ctl0__ctl0_cphBody__ctl0_hlSiteLogo" href="/">
-        <img src="images/affinity-logo.png" alt=""/>
-    </a>
-</span>
-<span class="siteName">
-    <a href="/" id="_ctl0__ctl0_cphBody__ctl1_hlName">AFFINITY.</a>
-</span>
+            <span class="siteLogo">
+                 <a id="_ctl0__ctl0_cphBody__ctl0_hlSiteLogo" href="/">
+                     <img src="images/affinity-logo.png" alt=""/>
+                 </a>
+            </span>
+            <span class="siteName">
+                 <a href="/" id="_ctl0__ctl0_cphBody__ctl1_hlName">AFFINITY.</a>
+            </span>
             </div>
 
+            <div class="statusbarSearch">
+                <div class="searchBox">
+                    <div class="search_div"
+                         onkeydown="if(event.keyCode==13){document.getElementById('_ctl0__ctl0_cphBody__ctl0_searchSiteGo').click();return false}else{return true}">
+                        <input type="text" id="_ctl0__ctl0_cphBody__ctl0_searchSite" name="searchSite" size="22"
+                               value="Search" onblur="if(this.value==''){this.value='Search';}"
+                               onfocus="if(this.value=='Search'){this.value='';}" class="text">
+                    </div>
+                    <input type="button" id="_ctl0__ctl0_cphBody__ctl0_searchSiteGo" value="Go" class="button"
+                           onc+lick="doSiteSearch(this.id,'Search',false,null,null);">
+                </div>
+
+                <div>
+                    <div class="statusbar">
+                        <div class="greeting_div">Good morning, Insight</div>
+                        <a href="/User/Logout.aspx" title="Sign out of the web site" class="logout_link">Logout</a><a
+                            href="javascript:openLogin();" title="Access site administration pages"
+                            class="weboffice_link">Web Office</a>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -184,4 +207,3 @@
         </div>
     </nav>
 </section>
--->

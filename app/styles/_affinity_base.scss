@@ -35,38 +35,42 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans Bold', sans-serif;
+  margin: 0.1em 0;
 }
 
+
 h1 {
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 48px;
+  line-height: 50px;
   margin-top: 0;
 }
 
 h2 {
-  font-size: 24px;
-  line-height: 26px;
+  font-size: 42px;
+  line-height: 46px;
 }
 
 h3 {
-  font-size: 17px;
-  line-height: 20px;
+  font-size: 36px;
+  line-height: 42px;
 }
 
 h4 {
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 h5 {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 h6 {
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 28px;
 }
+
 
 p {
 
@@ -124,6 +128,15 @@ tr.gridheader a img {
   width: 25px;
 }
 
+/* media list icons */
+
+.media_box_cell img {
+  width: 18px;
+}
+.MediaListRSS img {
+  width: 40px;
+}
+
 @media (min-width: $breakpoint-sm) {
 
   body {
@@ -131,9 +144,11 @@ tr.gridheader a img {
     line-height: 24px;
   }
 
+
   h1 {
-    font-size: 85px;
-    line-height: 85px;
+    font-size: 48px;
+    line-height: 50px;
+    margin-top: 0;
   }
 
   h2 {
@@ -154,12 +169,14 @@ tr.gridheader a img {
   h5 {
     font-size: 20px;
     line-height: 24px;
+    font-weight: 700;
   }
 
   h6 {
     font-size: 18px;
     line-height: 28px;
   }
+
 
   p {
     margin-bottom: 24px;

@@ -32,6 +32,31 @@ $site_logo-max-width: 85px;
 $site_logo-color: #4d4d4d;
 $site_name-margin-bottom: 75px;
 
+// ======================================
+//  affinity header + statusbar + search
+// ======================================
+
+//  site logo & site name
+// ======================================
+
+//  statusbar
+// ======================================
+
+$header_statusbar_button-border-color: #d1d2d4;
+$header_statusbar_button-color: #4d4d4d;
+$header_statusbar_button-color--hover: #fff;
+$header_statusbar_button-background-color--hover: #5ac5c5;
+
+
+
+// search box
+// ======================================
+
+$header_search_button-border: #d1d2d4;
+$header_search_button-color: #fff;
+$header_search_button-background-color: #4d4d4d;
+$header_search_button-background-color--hover: #5ac5c5;
+$header_search-color: #4d4d4d;
 
 //  nav - dropdown menu
 // ======================================
@@ -401,6 +426,12 @@ $footer-background-color: #373f42;
 $footer_search_button-color: #fff;
 $footer_search_button-background-color: #5ac5c5;
 $footer_search_button-background-color--hover: #7fd7d7;
+
+// ======================================
+//  affinity footer_3
+// ======================================
+
+$footer_3-background-color: #ffffff;
 
 // ======================================
 //  affinity footerbar
