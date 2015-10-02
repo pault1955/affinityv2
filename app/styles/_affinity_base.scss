@@ -117,6 +117,16 @@ a {
 .preview_overlay_content img {
   width: 20px;
 }
+img.preview_show {
+  width: 20px;
+}
+
+/* popup windows */
+
+.popupwindow_title {
+  color: $system_calendar_popup_window-color;
+}
+
 /* view all forums  icon */
 .forums_boxout_contents a img {
   width: 20px;
