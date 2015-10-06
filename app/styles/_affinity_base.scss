@@ -146,6 +146,17 @@ tr.gridheader a img {
 .MediaListRSS img {
   width: 40px;
 }
+/* signup sheet */
+table.signup tr td, td.signup0 {
+
+  line-height: 0px;
+  font-size: 0px;
+  border-collapse: separate;
+}
+
+table.signup tr td img {
+  height: 8px !important;
+}
 
 @media (min-width: $breakpoint-sm) {
 

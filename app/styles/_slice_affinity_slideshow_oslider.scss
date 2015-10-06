@@ -17,7 +17,6 @@
 
   .bg-slider {
     background: url('../images/slideshow_bg.jpg') left -2% repeat-x;
-    background-size: 100% auto;
   }
 
   .o-slider-external {
@@ -279,7 +278,7 @@
       line-height: 60px;
     }
     .caption .slideButton {
-      display: block;
+      display: inline-block;
     }
 
     .caption .slideText {

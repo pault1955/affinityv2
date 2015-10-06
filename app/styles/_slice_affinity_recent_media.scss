@@ -53,9 +53,9 @@
 
       & a:hover img {
         opacity: 0.7;
-        transform: rotate(0); // fix for moving images on hover
-        -webkit-transform: rotate(0);
-        -moz-transform: rotate(0);
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
       }
 
       & img {
@@ -126,6 +126,7 @@
     border: 2px solid $media_cards_button-border;
     background-color: $media_cards_button-background-color;
     color: $media_cards_button-color;
+    clear: both;
 
     &:hover {
       background-color: $media-cards_button-background-color--hover;
