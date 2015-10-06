@@ -114,6 +114,38 @@ $(document).ready(function () {
     });
 
 
+
+    // oslider
+
+    $('#animated_slider').oSlider({
+        liquidLayout: true,
+        autoStart: true,
+        pauseOnHover: true,
+        listNavThumbs: false,
+        listNavThumbName: '',
+        arrowsNavHide: true,
+        layers: {
+            first: {
+                className: 'bg-slider',
+                offset: 2,
+                direction: 'ltr'
+            }
+        }
+    });
+
+    $( '#animated_slider  img' ).each(function( ) {
+        var slideLink = $(this).parent().attr('href');
+        var alt = $(this).attr('alt');
+        console.log(alt);
+        var data = $.parseHTML( alt );
+        var title = '<div class="slideTitle">' + ($(data).text().split('*')[ 0 ] || '') + '</div>';
+        var subtitle = '<div class="slideText">' + ($(data).text().split('*')[ 1 ] || '') + '</div>';
+        var caption = '<div class="caption">' + title + '<div class="divider"></div>' + subtitle + '<a href="' + slideLink + '" class="slideButton">MORE DETAILS</a></div>';
+        console.log(caption);
+        $(caption).insertAfter( this );
+    });
+
+
     // not used in production
 
     $('.slice_affinity_4_al .info_cards .articleListSummary').each(function () {
