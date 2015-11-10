@@ -10,7 +10,7 @@
   .content_page_main {
 
     .content_page_main_content {
-      blockquote {
+       blockquote {
         padding: 15px;
         margin: 0;
         border: none;
@@ -146,6 +146,10 @@
 
   @media (min-width: $breakpoint-sm) {
     .content_page_main {
+
+      .content_page_main_content {
+        margin-bottom: 40px;
+      }
 
       .content_page_main_sidebar {
 

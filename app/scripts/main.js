@@ -14,6 +14,7 @@ $(document).ready(function () {
     /* remove 1st item in dropdown menu re-instate my area>my details.
      set background color on ul where no groups below top-level item   */
 
+
     $('.menu_item_level_2.first').each(function() {
         if($(this).find('a[href=\'/MyArea/MyDetails.aspx\']').length === 0) {
             if($(this).siblings().length === 0) {
@@ -30,20 +31,23 @@ $(document).ready(function () {
         label: "Menu",
         closedSymbol: '&#9660;',
         openedSymbol: '&#9654;',
+        'afterOpen': function() {
+            $('.slice_affinity_header .slicknav_menu').css({'margin-bottom':'50px'});
+
+        },
+        'afterClose': function() {
+            $('.slice_affinity_header .slicknav_menu').css({'margin-bottom':'0'});
+
+        },
         'init': function(){
             if ($('body').hasClass('guest_user')) {
-                $('<li class="sign_in_nav"><a href="/user/login.aspx"class="login_item" title="Login to access more features">Login</a></li><li><a href="/User/Registration.aspx" class="login_item" title="Apply for web site username and password" class="register_link">Register</a></li>').insertAfter('.slicknav_nav > .last_item').fadeIn("slow");
+                $('<li class="sign_in_nav"><div class="statusbar"><a href="/user/login.aspx" title="Login to access more features">Login</a><a href="/User/Registration.aspx" title="Apply for web site username and password" class="register_link">Register</a></div></li>').insertAfter('.slicknav_nav > .last_item').fadeIn("slow");
             }else{
-                $('<li class="log_out_nav"><a href="/User/Logout.aspx"class="login_item" title="Sign out of the web site" class="logout_link">Logout</a></li><li><a href="/Admin/Default.aspx" class="login_item" title="Access site administration pages" class="weboffice_link">Web Office</a></li>').insertAfter('.slicknav_nav > .last_item').fadeIn("slow");
+                $('<li class="log_out_nav"><div class="statusbar"><a href="/User/Logout.aspx" title="Sign out of the web site" class="logout_link">Logout</a><a href="/Admin/Default.aspx" title="Access site administration pages" class="weboffice_link">Web Office</a></div></li>').insertAfter('.slicknav_nav > .last_item').fadeIn("slow");
             }
-        },
-        'afterOpen': function () {
-            $('.slice_affinity_header .slicknav_menu').css({'margin-bottom': '50px'});
-        },
-        'afterClose': function () {
-            $('.slice_affinity_header .slicknav_menu').css({'margin-bottom': '0'});
         }
     });
+
 
 
     $('.bannerSlides .gallery_ul').show().bxSlider({
@@ -136,12 +140,10 @@ $(document).ready(function () {
     $( '#animated_slider  img' ).each(function( ) {
         var slideLink = $(this).parent().attr('href');
         var alt = $(this).attr('alt');
-        console.log(alt);
         var data = $.parseHTML( alt );
         var title = '<div class="slideTitle">' + ($(data).text().split('*')[ 0 ] || '') + '</div>';
         var subtitle = '<div class="slideText">' + ($(data).text().split('*')[ 1 ] || '') + '</div>';
         var caption = '<div class="caption">' + title + '<div class="divider"></div>' + subtitle + '<a href="' + slideLink + '" class="slideButton">MORE DETAILS</a></div>';
-        console.log(caption);
         $(caption).insertAfter( this );
     });
 

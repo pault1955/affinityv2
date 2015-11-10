@@ -34,7 +34,6 @@
     display: none;
   }
 
-
   /* ==========================================================================
     Nav
     ========================================================================== */
@@ -159,190 +158,211 @@
 
   // core
 
+  /*
+    Mobile Menu Core Style
+*/
+
   .slicknav_btn {
     position: relative;
     display: block;
     vertical-align: middle;
     float: right;
-    padding: 0.438em 0.625em 0.438em 0.625em;
-    line-height: 1.125em;
+    padding: 0 0.625em 0 0.625em;
     cursor: pointer;
+    width: 100%;
+    text-decoration: none;
+    line-height: 42px;
+    height: 42px;
+    background-color: $slicknav_button-background-color;
+
     .slicknav_icon-bar + .slicknav_icon-bar {
-      margin-top: 0.188em;
+      margin-top: 4px;
+    }
+    span {
+      display: block;
+      // float: none;
     }
   }
+
   .slicknav_menu {
+
+    font-size: $slicknav-font-size;
     *zoom: 1;
+
     .slicknav_menutxt {
       display: block;
-      line-height: 1.188em;
-      float: left;
+      line-height: 42px;
+      float: right;
     }
+
     .slicknav_icon {
-      float: left;
-      margin: 0.188em 0 0 0.438em;
+      float: right;
+      margin: 12px 0 0 10px;
+      width: 23px;
     }
+
     .slicknav_no-text {
       margin: 0;
     }
+
     .slicknav_icon-bar {
       display: block;
-      width: 1.125em;
-      height: 0.125em;
-      -webkit-border-radius: 1px;
-      -moz-border-radius: 1px;
-      border-radius: 1px;
-      -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-      -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+      width: 20px;
+      height: 3px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
     }
-    &:before {
-      content: " ";
-      display: table;
+
+    .slicknav_menutxt {
+      color: $slicknav_button-menu-color;
+      font-size: $slicknav-font-size
     }
-    &:after {
-      content: " ";
-      display: table;
-      clear: both;
+
+    .slicknav_icon-bar {
+      background-color: $slicknav_button-menu-color;
     }
   }
+
   .slicknav_nav {
     clear: both;
-    ul {
+    color: $slicknav-color;
+    margin: 0;
+    padding: 0;
+    font-size: $slicknav-font-size;
+    border-bottom: 1px solid $slicknav-link-border-color;
+    background: $slicknav-background-color;
+    list-style: none;
+    overflow: hidden;
+
+    ul, li {
       display: block;
     }
-    li {
-      display: block;
-    }
+
     .slicknav_arrow {
       font-size: 0.8em;
       margin: 0 0 0 0.4em;
-      float: right;
-      font-family: arial;
     }
+
     .slicknav_item {
+      display: block;
       cursor: pointer;
       a {
-        display: inline;
+        display: inline
       }
     }
-    .slicknav_row {
-      display: block;
-    }
+
     a {
       display: block;
     }
-    .slicknav_parent-link a {
-      display: inline;
-    }
-  }
-  .slicknav_brand {
-    float: left;
-  }
 
-  // theme
-
-  .slicknav_menu {
-    font-size: 16px;
-    box-sizing: border-box;
-    background: $slicknav-background-color;
-    padding: 5px 0;
-    * {
-      box-sizing: border-box;
-    }
-    .slicknav_menutxt {
-      color: $slicknav-color;
-      font-weight: normal;
-      // text-shadow: 0 1px 3px $slicknav-text-shadow;
-    }
-    .slicknav_icon-bar {
-      background-color: $slicknav-color;
-    }
-  }
-  .slicknav_btn {
-    margin: 0;
-    text-decoration: none;
-    text-shadow: 0 1px 1px $slicknav_button-text-shadow;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    background-color: $slicknav_button-background-color;
-  }
-  .slicknav_btn.slicknav_open {
-    background-color: $slicknav_button-background-color--open;
-  }
-
-  .slicknav_nav {
-    color: $slicknav-color;
-    margin: 0;
-    padding: 8px 12px;
-    font-size: $slicknav-font-size;
-    list-style: none;
-    overflow: hidden;
-    background-color: $slicknav-background--open;
     ul {
-      list-style: none;
-      overflow: hidden;
       padding: 0;
       margin: 0;
+      background: $slicknav_sub_menu-background-color;
+      list-style: none;
+      overflow: hidden;
     }
-    .slicknav_row {
-      padding: 8px 10px;
-      margin: 0;
-      &:hover {
-        background: $slicknav-background-color--hover;
-        color: $slicknav-color;
-      }
+
+    li {
+      border-top: 1px solid $slicknav-link-border-color;
     }
+
+    .slicknav_item {
+      padding: 0px 25px;
+      height: 42px;
+      line-height: 42px;
+    }
+
     a {
-      padding: 5px 10px;
-      margin: 2px 0px;
       text-decoration: none;
-      color: $slicknav-color;
-      &:hover {
-        background: $slicknav-background-color--hover;
-        color: $slicknav-color--hover;
-      }
+      color: #414141;
+      text-transform: uppercase;
     }
-    .slicknav_txtnode {
-      margin-left: 15px;
+
+    li > a {
+      padding: 0px 25px;
+      height: 42px;
+      line-height: 42px;
     }
+
+    ul li > a {
+      font-size: 13px;
+      padding: 0px 25px;
+      height: 32px;
+      line-height: 32px;
+    }
+
+    ul li li > a {
+      font-size: $slicknav-submenu-font-size;
+      padding: 0px 40px;
+    }
+
+    ul li.has_sub_menu > a {
+      padding: 0px 25px 0px 25px;
+      background-color: $slicknav-background-color;
+    }
+
     .slicknav_item a {
       padding: 0;
       margin: 0;
     }
-    .slicknav_parent-link a {
-      padding: 0;
-      margin: 0;
+
+    .slicknav_txtnode {
+      margin-left: 15px;
     }
-  }
-  .slicknav_brand {
-    color: $slicknav-color;
-    font-size: 18px;
-    line-height: 30px;
-    padding: 7px 12px;
-    height: 44px;
+
+    .slicknav_collapsed > a .slicknav_arrow {
+      font-size: 0;
+      background: url(../images/affinity-tab-arrows.png) no-repeat;
+      float: right;
+      width: 15px;
+      height: 12px;
+      margin-top: 15px;
+      background-size: 15px 24px;
+    }
+
+    .slicknav_open > a .slicknav_arrow {
+      font-size: 0;
+      background: url(../images/affinity-tab-arrows.png) no-repeat;
+      float: right;
+      width: 15px;
+      height: 12px;
+      margin-top: 15px;
+      background-size: 15px 24px;
+      background-position: 0 -12px;
+    }
+
+    li:hover > a {
+      color: $slicknav-color--hover;
+    }
+
+    > li:hover > a, > li.slicknav_open > a {
+      color: #fff;
+      background: $slicknav-top-level-background-color;
+    }
+
+    > li:hover > a > a, > li.slicknav_open > a > a {
+      color: #fff;
+    }
+
   }
 
-  .slicknav_open > a {
-    background: $slicknav-toplink-background-color--open;
-    color: $slicknav-toplink-color--open;
+  .slicknav_menu:before,
+  .slicknav_menu:after {
+    content: " ";
+    display: table;
   }
 
-  .slicknav_open > a a, .slicknav_open > a > a {
-    color: $slicknav-color--open !important;
-  }
-
-  .slicknav_open > ul {
-    background: $slicknav_sub_menu-background-color;
-    padding-left: 12px;
+  .slicknav_menu:after {
+    clear: both
   }
 
   .slicknav_btn.slicknav_open .slicknav_icon:before {
     content: 'X';
-    color: #4d4d4d;
+    color: $slicknav_button-menu-color;
     font-weight: 500;
-    font-size: 16px;
+    font-size: $slicknav-font-size + 4;
     line-height: 12px;
     text-align: center;
     text-indent: 0px;
@@ -350,11 +370,35 @@
     height: 12px;
     display: block;
     margin: 0 3px;
+    margin-top: 4px;
 
   }
 
   .slicknav_btn.slicknav_open .slicknav_icon .slicknav_icon-bar {
     display: none;
+  }
+
+  /* Button Text */
+
+  .slicknav_menu .log_out_nav, .slicknav_nav .sign_in_nav {
+    padding: 0 25px;
+    display: block;
+    width: 100%;
+    height: 42px;
+  }
+
+  .slicknav_menu .log_out_nav a:hover, .slicknav_nav .sign_in_nav a:hover {
+    color: $slicknav-color--hover;
+  }
+
+  .slicknav_menu .log_out_nav a, .slicknav_menu .sign_in_nav a {
+    display: inline;
+    float: left;
+    padding: 0 25px 0 0;
+    margin: 0 5px 0 0;
+    height: 42px;
+    line-height: 42px;
+    font-size: 12px;
   }
 
   @media only screen and (min-width: $breakpoint-sm) {
@@ -405,7 +449,7 @@
         .greeting_div {
           display: none;
         }
-        a {
+        > a {
           border: 1px solid $header_statusbar_button-border-color;
           color: $header_statusbar_button-color;
           font-size: 13px;
