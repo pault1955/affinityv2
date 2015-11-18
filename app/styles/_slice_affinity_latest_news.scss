@@ -7,8 +7,8 @@
 
 .slice_affinity_latest_news {
 
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 10px;
   background-color: $latest_news-background-color;
 
   .info_header {
@@ -139,12 +139,18 @@
 
   @media (min-width: $breakpoint-sm) {
 
+    padding-top: 0;
+    padding-bottom: 20px;
+
     .info_header {
+
+      padding-top: 60px;
+      padding-bottom: 30px;
 
       .info_header_title {
         font-size: $info_header_title-font-size * 1.5;
         margin-bottom: $info_header_title-margin-bottom;
-        line-height: $info-header_title-line-height * 1.5;
+        line-height: $info_header_title-line-height * 1.5;
       }
       .info_header_text {
         margin-bottom: 35px;

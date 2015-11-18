@@ -5,7 +5,7 @@
 .slice_affinity_4_al {
 
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 0;
 
   .info_header {
 
@@ -17,7 +17,7 @@
       font-size: $info_header_title-font-size;
       font-family: $info_header_title-font-family;
       margin-bottom: $info_header_title-margin-bottom;
-      line-height: $info-header_title-line-height;
+      line-height: $info_header_title-line-height;
       font-weight: 900;
     }
     .info_header_text {
@@ -109,7 +109,7 @@
       .info_header_title {
         font-size: $info_header_title-font-size * 1.5;
         margin-bottom: $info_header_title-margin-bottom;
-        line-height: $info-header_title-line-height * 1.5;
+        line-height: $info_header_title-line-height * 1.5;
       }
       .info_header_text {
         margin-bottom: 35px;
@@ -126,6 +126,9 @@
   }
 
   @media (min-width: $breakpoint-md) {
+
+    padding-bottom: 30px;
+
     .info_cards {
 
       .articleListSummary {
@@ -134,7 +137,7 @@
       }
 
       .info_cards_button_wrapper {
-        margin-bottom: 0px;
+        margin-bottom: 0;
       }
     }
 

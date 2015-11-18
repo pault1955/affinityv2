@@ -27,7 +27,7 @@ $sitebutton_button-color--hover: #fff;
 // ======================================
 
 $site_logo_name-height: 123px;
-$site_logo-margin-top:0;
+$site_logo-margin-top:15px;
 $site_logo-font-size: 26px;
 $site_logo-max-width: 85px;
 $site_logo-color: #4d4d4d;
@@ -141,13 +141,13 @@ $info_header_title-color: #4d4d4d;
 $info_header_title-font-size: 28px;
 $info_header_title-font-family: "Open Sans", sans-serif;
 $info_header_title-margin-bottom: 10px;
-$info-header_title-line-height: 28px;
+$info_header_title-line-height: 28px;
 
 $info_header_text-color: #4d4d4d;
 $info_header_text-font-size: 15px;
 $info_header_text-font-family: "Open Sans", sans-serif;
 $info_header_text-margin-bottom: 8px;
-$info-header_text-line-height: 20px;
+$info_header_text-line-height: 20px;
 
 //  card layout
 // ===================================
@@ -212,13 +212,13 @@ $info_header_reverse_title-color: #fff;
 $info_header_reverse_title-font-size: 28px;
 $info_header_reverse_title-font-family: "Open Sans", sans-serif;
 $info_header_reverse_title-margin-bottom: 10px;
-$info-header_reverse_title-line-height: 28px;
+$info_header_reverse_title-line-height: 28px;
 
 $info_header_reverse_text-color: #fff;
 $info_header_reverse_text-font-size: 15px;
 $info_header_reverse_text-font-family: "Open Sans", sans-serif;
 $info_header_reverse_text-margin-bottom: 8px;
-$info-header_reverse_text-line-height: 20px;
+$info_header_reverse_text-line-height: 20px;
 
 //  news articles
 // ===================================
@@ -294,7 +294,7 @@ $video_pager-background-color: #d1d2d4;
 $video_pager-background-color--active: #5ac5c5;
 $video_pager-width-height: 16px;
 $video_control-background-color: #fff;
-$video_max-width: 400px;
+$video_max-width: 800px;
 $video_button-background-color: #fff;
 $video_button-border: 2px solid #d1d2d4;
 $video_button-color: #4d4d4d;
@@ -344,6 +344,31 @@ $media_cards_button-background-color--hover: #5ac5c5;
 // ======================================
 
 $text_image-background-image: #fff;
+$text_image_header_text-margin-bottom: 8px;
+
+$text_image_title-color: #4d4d4d;
+$text_image_title-font-size: 26px;
+$text_image_title-font-family: "Open Sans", sans-serif;
+$text_image_title-margin-bottom: 10px;
+$text_image_title-line-height: 28px;
+
+$text_image_text-color: #4d4d4d;
+$text_image_text-font-size: 15px;
+$text_image_text-font-family: "Open Sans", sans-serif;
+$text_image_text-margin-bottom: 8px;
+$text_image_text-line-height: 20px;
+
+$text_image_reverse_title-color: #fff;
+$text_image_reverse_title-font-size: 26px;
+$text_image_reverse_title-font-family: "Open Sans", sans-serif;
+$text_image_reverse_title-margin-bottom: 10px;
+$text_image_reverse_title-line-height: 28px;
+
+$text_image_reverse_text-color: #fff;
+$text_image_reverse_text-font-size: 15px;
+$text_image_reverse_text-font-family: "Open Sans", sans-serif;
+$text_image_reverse_text-margin-bottom: 8px;
+$text_image_reverse_text-line-height: 20px;
 
 // ======================================
 //  affinity 3 locations

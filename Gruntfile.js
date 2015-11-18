@@ -181,7 +181,7 @@ module.exports = function (grunt) {
         httpFontsPath: 'fonts',
         relativeAssets: false,
         assetCacheBuster: false,
-        noLineComments: false
+        noLineComments: true
       },
       dist: {
         options: {
@@ -192,7 +192,7 @@ module.exports = function (grunt) {
       server: {
         options: {
           debugInfo: false,
-          noLineComments: false
+          noLineComments: true
         }
       }
     },

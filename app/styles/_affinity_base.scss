@@ -208,3 +208,7 @@ table.signup tr td img {
   }
 
 }
+
+// hide author info on articles due to homepage community article list
+.content_page_main .ArticleBody .author {
+  display: none;}

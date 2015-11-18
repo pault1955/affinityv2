@@ -4,7 +4,7 @@
 
 .slice_affinity_3_locations {
 
-  padding-top: 30px;
+  padding-top: 40px;
   padding-bottom: 30px;
 
   .info_header {
@@ -21,6 +21,11 @@
       font-weight: 900;
 
     }
+  }
+  .info_card_summary {
+    text-align: center;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
   }
 
   .info_cards {
@@ -52,7 +57,7 @@
       .info_card_button_wrapper {
 
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
 
         .info_card_button {
           display: inline-block;
@@ -88,7 +93,7 @@
 
       .info_header_title {
         font-size: $info_header_title-font-size * 1.4;
-        line-height: $info-header_title-line-height * 1.4;
+        line-height: $info_header_title-line-height * 1.4;
         margin-bottom: 0;
       }
       .info_header_text {
@@ -100,11 +105,12 @@
 
   @media (min-width: $breakpoint-md) {
 
-    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 55px;
 
-    .info_card {
+    .info_cards {
       .info_card_button_wrapper {
-        margin-bottom: 35px;
+        margin-bottom: 0;
       }
     }
   }

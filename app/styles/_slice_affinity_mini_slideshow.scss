@@ -5,7 +5,7 @@
 .slice_affinity_mini_slideshow {
 
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   background-color: $mini_slideshow-background-color;
 
   .info_header {
@@ -151,7 +151,8 @@
 
   @media (min-width: $breakpoint-sm) {
 
-    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 30px;
 
     .info_header {
 
