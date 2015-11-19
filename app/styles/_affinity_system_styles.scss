@@ -428,6 +428,7 @@ table[id$="ThreadGrid"] .griditem img {
 
 .media_summary_image img {
   width: auto;
+  height: auto;
 }
 ul.media_recording_links {
   margin-top:0;
@@ -620,7 +621,7 @@ td.cal_row,td.cal_altrow {
 }
 
 /* ==========================================================================
-  Search Page
+  Search Page.
    ========================================================================== */
 input.button[id$='btnSearchTemplate'] {
   margin-top: 10px;

@@ -1,3 +1,5 @@
+@import "../../lib/bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import "../../lib/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins";
 @import "affinity_variables";
 @import "affinity_base";
 @import "slice_affinity_login_box";
@@ -25,4 +27,3 @@
 /*@import "slice_affinity_footer_3";*/
 @import "slice_affinity_footerbar";
 @import "slice_affinity_content_page";
-

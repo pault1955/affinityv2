@@ -30,6 +30,10 @@
 
   .info_cards > div {
     float: left;
+    @include make-xs-column(12);
+    @include make-sm-column(6);
+    @include make-md-column(3);
+
   }
 
   .info_cards {
