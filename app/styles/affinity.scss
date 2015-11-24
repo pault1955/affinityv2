@@ -1,5 +1,9 @@
-@import "../../lib/bootstrap-sass-official/assets/stylesheets/bootstrap";
-@import "../../lib/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins";
+@import "../../lib/bootstrap-sass-official/assets/stylesheets/bootstrap/variables.scss";
+@import "../../lib/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/clearfix.scss";
+@import "../../lib/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/center-block.scss";
+@import "../../lib/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/grid.scss";
+@import "../../lib/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/grid-framework.scss";
+@import "../../lib/bootstrap-sass-official/assets/stylesheets/bootstrap/grid.scss";
 @import "affinity_variables";
 @import "affinity_base";
 @import "slice_affinity_login_box";

@@ -62,6 +62,12 @@
 
     .gallery_li {
       margin-bottom: 40px;
+      @include make-xs-column(10);
+      @include make-sm-column(6);
+      @include make-sm-column-offset(3);
+      @include make-md-column(4);
+      @include make-md-column-offset(0);
+      @include center-block;
 
       a img {
         -webkit-transition: all 500ms ease;
