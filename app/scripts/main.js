@@ -160,7 +160,6 @@ $(document).ready(function () {
     });
 
 
-    // $('.slice_affinity_4_al .info_cards > div').addClass('col-md-3 col-sm-6  col-xs-12');
 
 
     // slice_affinity_latest_news
@@ -195,10 +194,6 @@ $(document).ready(function () {
             }
         });
     }
-
-
-    // $('.slice_affinity_latest_news .news_cards > div').addClass('col-xs-12 col-sm-6 col-md-4 center-block');
-    // $('.slice_affinity_latest_news .news_cards > div:last-child').removeClass('center-block').addClass('col-sm-offset-3 col-md-offset-0');
 
 
     $('.slice_affinity_latest_news .articleListTitle a').each(function (index) {
@@ -247,8 +242,6 @@ $(document).ready(function () {
 
     // slice_affinity_recent_media
 
-    // $('.slice_affinity_recent_media .media_cards > span > div').addClass('col-xs-12 col-sm-6 col-md-4 center-block');
-    // $('.slice_affinity_recent_media .media_cards > span > div:last-child').removeClass('center-block').addClass('col-sm-offset-3 col-md-offset-0');
 
     $('.slice_affinity_recent_media .mediaListTitle a').each(function (index) {
         var titleLink = $(this).attr("href");
@@ -276,18 +269,6 @@ $(document).ready(function () {
     /* Card Grid - Community */
 
 
-    $('.slice_affinity_community .card_grid .gallery_li').addClass('col-xs-10 col-sm-6 col-sm-offset-3 col-md-4  col-md-offset-0 center-block');
-
-    /*
-    $('.slice_affinity_community .card_grid .gallery_li a').each(function () {
-        var cardGridLink = $(this).attr('href');
-        var cardGridTitle = $(this).find('img').attr('title');
-        var imgLink = '<div class="card_grid_title_wrapper"> <a class="card_grid_title" href="' + cardGridLink + '">' + cardGridTitle + '</a></div>';
-        $(imgLink).insertAfter(this);
-    });
-
-    */
-
     $( ".slice_affinity_community .card_grid .gallery_li img" ).each(function( index ) {
         var cardGridLink = $(this).parent().attr("href");
         var cardGridAlt = $(this).attr('alt');
@@ -301,10 +282,6 @@ $(document).ready(function () {
 
 
     /* 4 graphic block */
-
-
-    // $('.slice_affinity_4_graphic_blocks .gallery_li').addClass('col-xs-6 col-md-3');
-
 
 
     /* allow drop down menus to work on android */
@@ -375,8 +352,5 @@ $(document).ready(function () {
     if ($('div [id$="LoginNameValidator"]').length) {
         $('.systemPageContent .shadedbox').attr({"style": "max-width:300px !important;"})
     }
-    /*   $(window).load(function () {
-     $('.slice_affinity_latest_news .articleListImage, .slice_affinity_latest_news .articleListTitle, .slice_affinity_latest_news .articleListSummary').matchHeight();
-     });
-     */
+
 });
