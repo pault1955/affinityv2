@@ -50,7 +50,7 @@ $(document).ready(function () {
 
 
 
-    $('.bannerSlides .gallery_ul').show().bxSlider({
+    $('.slice_affinity_slideshow  .bannerSlides .gallery_ul').show().bxSlider({
         mode: 'fade',
         auto: true,
         pause: 8000,
@@ -61,7 +61,7 @@ $(document).ready(function () {
     });
 
 
-    $( '.bannerSlides ul li.gallery_li a img' ).each(function( ) {
+    $( '.slice_affinity_slideshow  .bannerSlides ul li.gallery_li a img' ).each(function( ) {
         var slideLink = $(this).parent().attr('href');
         var alt = $(this).attr('alt');
         var data = $.parseHTML( alt );
@@ -96,7 +96,7 @@ $(document).ready(function () {
 
 
 
-    $('.bannerSlides_pub .gallery_ul').show().bxSlider({
+    $('.slice_affinity_slideshow_advert  .bannerSlides_pub .gallery_ul').show().bxSlider({
         mode: 'fade',
         auto: true,
         pause: 8000,
@@ -107,7 +107,30 @@ $(document).ready(function () {
     });
 
 
-    $( '.bannerSlides_pub ul li.gallery_li a img' ).each(function( ) {
+    $( '.slice_affinity_slideshow_advert  .bannerSlides_pub ul li.gallery_li a img' ).each(function( ) {
+        var slideLink = $(this).parent().attr('href');
+        var alt = $(this).attr('alt');
+        var data = $.parseHTML( alt );
+        var title = '<div class="slideTitle">' + ($(data).text().split('*')[ 0 ] || '') + '</div>';
+        var subtitle = '<div class="slideText">' + ($(data).text().split('*')[ 1 ] || '') + '</div>';
+        var caption = '<div class="caption">' + title + '<div class="divider"></div>' + subtitle + '<a href="' + slideLink + '" class="slideButton">MORE DETAILS</a></div>';
+        $(caption).insertAfter( this );
+    });
+
+    // full width slideshow
+
+    $('.slice_affinity_slideshow_full_width  .bannerSlides .gallery_ul').show().bxSlider({
+        mode: 'fade',
+        auto: true,
+        pause: 8000,
+        speed: 500,
+        pager: true,
+        controls: false,
+        preloadImages: 'all'
+    });
+
+
+    $( '.slice_affinity_slideshow_full_width  .bannerSlides ul li.gallery_li a img' ).each(function( ) {
         var slideLink = $(this).parent().attr('href');
         var alt = $(this).attr('alt');
         var data = $.parseHTML( alt );
