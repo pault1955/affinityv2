@@ -91,6 +91,15 @@ a {
   }
 }
 
+/* remove ios shadow */
+
+input, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+
 .sitebutton {
   display: inline-block;
   margin-top: 10px;
@@ -158,6 +167,13 @@ table.signup tr td, td.signup0 {
 
 table.signup tr td img {
   height: 8px !important;
+}
+/* form styling */
+input {
+  -webkit-appearance: none;
+}
+input[type="checkbox"] + label, input[type="radio"] +  label {
+  margin-left:10px;
 }
 
 @media (min-width: $breakpoint-sm) {
